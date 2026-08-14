@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/AuthService/">
+    <Project Path="AuthService/Auth.API/Auth.API.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/TeachApp.AppHost/TeachApp.AppHost.csproj" />
+  </Folder>
+  <Folder Name="/TeachService/">
+    <Project Path="TeachService/Teach.API/Teach.API.csproj" />
+  </Folder>
+  <Project Path="Teach.Gateway/Teach.Gateway.csproj" />
+</Solution>
