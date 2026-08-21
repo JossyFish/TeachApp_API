@@ -1,6 +1,9 @@
 <Solution>
   <Folder Name="/AuthService/">
     <Project Path="AuthService/Auth.API/Auth.API.csproj" />
+    <Project Path="AuthService/Auth.Application/Auth.Application.csproj" Id="4c38fff1-fa53-4f98-90bc-fafaefca1e6d" />
+    <Project Path="AuthService/Auth.Domain/Auth.Domain.csproj" Id="4350b7bb-851a-43fa-b4fa-480429858717" />
+    <Project Path="AuthService/Auth.Infrastructure/Auth.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/TeachApp.AppHost/TeachApp.AppHost.csproj" />

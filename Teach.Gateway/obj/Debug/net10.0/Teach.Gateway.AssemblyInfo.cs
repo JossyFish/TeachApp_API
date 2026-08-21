@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Teach.Gateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7477f5bbcde9bc6bd6d648010362ba90bc21c548")]
 [assembly: System.Reflection.AssemblyProductAttribute("Teach.Gateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Teach.Gateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

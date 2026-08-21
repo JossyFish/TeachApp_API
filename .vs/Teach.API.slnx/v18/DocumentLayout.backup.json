@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43A2544B-5340-3AEA-0A2A-47F8EF1480EA}|src\\TeachApp.AppHost\\TeachApp.AppHost.csproj|d:\\kamila\\code\\lernapp\\teach.api\\src\\teachapp.apphost\\apphost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43A2544B-5340-3AEA-0A2A-47F8EF1480EA}|src\\TeachApp.AppHost\\TeachApp.AppHost.csproj|solutionrelative:src\\teachapp.apphost\\apphost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +19,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppHost.cs",
-              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\src\\TeachApp.AppHost\\AppHost.cs",
-              "RelativeDocumentMoniker": "src\\TeachApp.AppHost\\AppHost.cs",
-              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\src\\TeachApp.AppHost\\AppHost.cs",
-              "RelativeToolTip": "src\\TeachApp.AppHost\\AppHost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T11:51:56.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "AuthService\\Auth.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T11:50:48.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.API\\Program.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
               "RelativeToolTip": "AuthService\\Auth.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-14T11:49:46.63Z",
               "EditorCaption": ""
