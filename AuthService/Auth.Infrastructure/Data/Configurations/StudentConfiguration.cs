@@ -8,46 +8,40 @@ namespace Auth.Infrastructure.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<StudentEntity> builder)
         {
-            builder.ToTable("student_profiles");
-
             builder.HasKey(s => s.UserId);
 
             builder.Property(s => s.UserId)
-                .HasColumnName("user_id")
                 .IsRequired();
 
             builder.Property(s => s.EnrolledCoursesCount)
-                .HasColumnName("enrolled_courses_count")
                 .IsRequired()
                 .HasDefaultValue(0);
 
             builder.Property(s => s.CompletedCoursesCount)
-                .HasColumnName("completed_courses_count")
                 .IsRequired()
                 .HasDefaultValue(0);
 
             builder.Property(s => s.LearningHours)
-                .HasColumnName("learning_hours")
                 .IsRequired()
                 .HasDefaultValue(0);
 
             builder.Property(s => s.CertificatesCount)
-                .HasColumnName("certificates_count")
                 .IsRequired()
                 .HasDefaultValue(0);
 
+            builder.Property(s => s.IsActive)
+                .IsRequired()
+                .HasDefaultValue(true);
+
             builder.Property(s => s.StreakDays)
-                .HasColumnName("streak_days")
                 .IsRequired()
                 .HasDefaultValue(0);
 
             builder.Property(s => s.CreatedAt)
-                .HasColumnName("created_at")
                 .IsRequired()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             builder.Property(s => s.UpdatedAt)
-                .HasColumnName("updated_at")
                 .IsRequired()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
@@ -57,11 +51,9 @@ namespace Auth.Infrastructure.Data.Configurations
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasIndex(s => s.UserId)
-                .IsUnique()
-                .HasDatabaseName("ix_student_profiles_user_id");
+                .IsUnique();
 
-            builder.HasIndex(s => new { s.UserId, s.IsActive })
-                .HasDatabaseName("ix_student_profiles_user_id_is_active");
+            builder.HasIndex(s => new { s.UserId, s.IsActive });
         }
     }
 }

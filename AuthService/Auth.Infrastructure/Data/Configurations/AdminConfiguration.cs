@@ -8,25 +8,20 @@ namespace Auth.Infrastructure.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<AdminEntity> builder)
         {
-            builder.ToTable("admin_profiles");
 
             builder.HasKey(a => a.UserId);
 
             builder.Property(a => a.UserId)
-                .HasColumnName("user_id")
                 .IsRequired();
 
             builder.Property(a => a.LastActionAt)
-                .HasColumnName("last_action_at")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             builder.Property(a => a.CreatedAt)
-                .HasColumnName("created_at")
                 .IsRequired()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             builder.Property(a => a.UpdatedAt)
-                .HasColumnName("updated_at")
                 .IsRequired()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
@@ -36,8 +31,7 @@ namespace Auth.Infrastructure.Data.Configurations
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasIndex(a => a.UserId)
-                .IsUnique()
-                .HasDatabaseName("ix_admin_profiles_user_id");
+                .IsUnique();
         }
     }
 }

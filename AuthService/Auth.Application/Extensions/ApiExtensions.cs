@@ -1,11 +1,13 @@
-﻿
-
+﻿using Auth.Application.Interfaces;
+using Auth.Application.Services;
 using Auth.Domain.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Auth.Application.Extensions
 {
@@ -14,7 +16,7 @@ namespace Auth.Application.Extensions
         public static IServiceCollection AddAuth(this IServiceCollection services)
         {
             var configuration = new ConfigurationBuilder()
-                .AddJsonFile("config.json", optional: false)
+                .AddJsonFile("appsettings.json", optional: false)
                 .Build();
 
             var jwtOptions = configuration.GetSection("JwtOptions").Get<JwtOptions>();
@@ -25,7 +27,6 @@ namespace Auth.Application.Extensions
             services.AddSingleton(provider =>
                 provider.GetRequiredService<IOptions<Domain.Options.AuthorizationOptions>>().Value);
 
-            services.AddScoped<IUserContext, UserContext>();
             services.AddScoped<IPermissionService, PermissionService>();
             services.AddScoped<IJwtProvider, JwtProvider>();
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EKOo2W52pxI=",
+  "dgSpecHash": "BN/bhOM8YOA=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Auth.Domain.csproj",
   "expectedPackageFiles": [
+    "D:\\NuGetCache\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "D:\\NuGetCache\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "D:\\NuGetCache\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
     "D:\\NuGetCache\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
