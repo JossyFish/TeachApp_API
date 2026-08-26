@@ -1,6 +1,6 @@
 ﻿using Auth.Application.Interfaces;
 using Auth.Application.Services;
-using Auth.Domain.Options;
+using Auth.Domain.Models.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
@@ -22,10 +22,10 @@ namespace Auth.Application.Extensions
             var jwtOptions = configuration.GetSection("JwtOptions").Get<JwtOptions>();
 
             services.Configure<JwtOptions>(configuration.GetSection(nameof(JwtOptions)));
-            services.Configure<Domain.Options.AuthorizationOptions>(configuration.GetSection(nameof(Domain.Options.AuthorizationOptions)));
+            services.Configure<Domain.Models.Options.AuthorizationOptions>(configuration.GetSection(nameof(Domain.Models.Options.AuthorizationOptions)));
 
             services.AddSingleton(provider =>
-                provider.GetRequiredService<IOptions<Domain.Options.AuthorizationOptions>>().Value);
+                provider.GetRequiredService<IOptions<Domain.Models.Options.AuthorizationOptions>>().Value);
 
             services.AddScoped<IPermissionService, PermissionService>();
             services.AddScoped<IJwtProvider, JwtProvider>();

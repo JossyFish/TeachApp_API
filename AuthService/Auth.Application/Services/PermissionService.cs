@@ -1,6 +1,6 @@
 ﻿using Auth.Application.Interfaces;
 using Auth.Domain.Enums;
-using Auth.Domain.Options;
+using Auth.Domain.Models.Options;
 using Microsoft.Extensions.Options;
 
 namespace Auth.Application.Services

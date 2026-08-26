@@ -1,4 +1,4 @@
-﻿namespace Auth.Domain.Options
+﻿namespace Auth.Domain.Models.Options
 {
     public class AuthorizationOptions
     {

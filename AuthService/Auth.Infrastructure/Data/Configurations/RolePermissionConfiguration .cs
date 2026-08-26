@@ -1,6 +1,6 @@
 ﻿using Auth.Domain.Entites;
 using Auth.Domain.Enums;
-using Auth.Domain.Options;
+using Auth.Domain.Models.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

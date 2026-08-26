@@ -1,5 +1,5 @@
 ﻿using Auth.Domain.Entites;
-using Auth.Domain.Options;
+using Auth.Domain.Models.Options;
 using Auth.Infrastructure.Data.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
