@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BN/bhOM8YOA=",
+  "dgSpecHash": "5PYgSkL7O6U=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Auth.Domain.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "D:\\NuGetCache\\microsoft.entityframeworkcore.sqlserver\\10.0.11\\microsoft.entityframeworkcore.sqlserver.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.entityframeworkcore.tools\\10.0.11\\microsoft.entityframeworkcore.tools.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.caching.abstractions\\10.0.11\\microsoft.extensions.caching.abstractions.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.caching.hybrid\\10.9.0\\microsoft.extensions.caching.hybrid.10.9.0.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.caching.memory\\10.0.11\\microsoft.extensions.caching.memory.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.configuration.abstractions\\10.0.11\\microsoft.extensions.configuration.abstractions.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.dependencyinjection\\10.0.11\\microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",

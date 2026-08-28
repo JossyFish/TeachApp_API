@@ -1,0 +1,5 @@
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\Communication.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\Communication.Infrastructure.AssemblyInfoInputs.cache
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\Communication.Infrastructure.AssemblyInfo.cs
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\Communication.Infrastructure.csproj.CoreCompileInputs.cache
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\Communication.Infrastructure.sourcelink.json

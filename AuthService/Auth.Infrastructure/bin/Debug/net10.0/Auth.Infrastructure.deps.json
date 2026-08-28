@@ -9,10 +9,25 @@
       "Auth.Infrastructure/1.0.0": {
         "dependencies": {
           "Auth.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Design": "10.0.11"
+          "MassTransit": "9.2.1",
+          "MassTransit.RabbitMQ": "9.2.1",
+          "Microsoft.EntityFrameworkCore.Design": "10.0.11",
+          "Microsoft.Extensions.Caching.Hybrid": "10.9.0",
+          "RabbitMQ.Client": "7.2.2"
         },
         "runtime": {
           "Auth.Infrastructure.dll": {}
+        }
+      },
+      "AutoMapper/16.2.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "8.19.2"
+        },
+        "runtime": {
+          "lib/net10.0/AutoMapper.dll": {
+            "assemblyVersion": "16.0.0.0",
+            "fileVersion": "16.2.0.0"
+          }
         }
       },
       "Azure.Core/1.50.0": {
@@ -46,6 +61,37 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "MassTransit/9.2.1": {
+        "dependencies": {
+          "MassTransit.Abstractions": "9.2.1"
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.dll": {
+            "assemblyVersion": "9.2.1.0",
+            "fileVersion": "9.2.1.0"
+          }
+        }
+      },
+      "MassTransit.Abstractions/9.2.1": {
+        "runtime": {
+          "lib/net10.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "9.2.1.0",
+            "fileVersion": "9.2.1.0"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/9.2.1": {
+        "dependencies": {
+          "MassTransit": "9.2.1",
+          "RabbitMQ.Client": "7.2.2"
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.RabbitMqTransport.dll": {
+            "assemblyVersion": "9.2.1.0",
+            "fileVersion": "9.2.1.0"
           }
         }
       },
@@ -511,6 +557,14 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.Hybrid/10.9.0": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Caching.Hybrid.dll": {
+            "assemblyVersion": "10.9.0.0",
+            "fileVersion": "10.900.26.41116"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyModel/10.0.11": {
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
@@ -715,6 +769,14 @@
           }
         }
       },
+      "RabbitMQ.Client/7.2.2": {
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.2.0"
+          }
+        }
+      },
       "System.ClientModel/1.8.0": {
         "dependencies": {
           "System.Memory.Data": "8.0.1"
@@ -835,10 +897,12 @@
       },
       "Auth.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "16.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.11",
           "Microsoft.EntityFrameworkCore": "10.0.11",
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11",
+          "Microsoft.Extensions.Caching.Hybrid": "10.9.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3"
         },
         "runtime": {
@@ -855,6 +919,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/16.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PE8HgPc5BZJnAFwjvDTE72gWL6YrYib+V7+vxtLXDYz0CH/fFgbVcwLUC9UHk5ALwspZ6Vbmoo6PHvseIk/0ZA==",
+      "path": "automapper/16.2.0",
+      "hashPath": "automapper.16.2.0.nupkg.sha512"
     },
     "Azure.Core/1.50.0": {
       "type": "package",
@@ -876,6 +947,27 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "MassTransit/9.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-99SFdhxyAxv5YhlXIwwpKjJYKy+cLMS+nvU5/fulUZB5P1WhXyUPjpu9zmxM+QY1TRnQkT3lyGXJkEPkb4Z3pw==",
+      "path": "masstransit/9.2.1",
+      "hashPath": "masstransit.9.2.1.nupkg.sha512"
+    },
+    "MassTransit.Abstractions/9.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R5+43Hs4O4PYzbwkgZnEO1a66Smdk1y4zjaUMKVgXPnBJSZnT3IuCATM6w4fPDfEezT2SEezfFZ09cZVpLT7eg==",
+      "path": "masstransit.abstractions/9.2.1",
+      "hashPath": "masstransit.abstractions.9.2.1.nupkg.sha512"
+    },
+    "MassTransit.RabbitMQ/9.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PxzPuHSrF+HKutU40CWthKDZO6/cdaHNuExf5OO3yoxTE9yf8399cYYbGtZZXZaKILkWOMsufM2EjtgRzY6tjQ==",
+      "path": "masstransit.rabbitmq/9.2.1",
+      "hashPath": "masstransit.rabbitmq.9.2.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.11": {
       "type": "package",
@@ -988,6 +1080,13 @@
       "sha512": "sha512-LClSs5cNN6za2Uk7IeH7RAP4Qe5EMXxFsD9i53ncPx21TVg04IEjoFyxvvsSNkq2/Ux9HyJsJ2qEO8Tl7Gcrrg==",
       "path": "microsoft.entityframeworkcore.sqlserver/10.0.11",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.10.0.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Hybrid/10.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0tHRbUCliInxTfPgN9K6RxrCVaWu9kyIT66vbIJ/YwA6BV2xa8vTqoE3JQXA2Rf2vRdgd29+HR6Ay6KmzDslw==",
+      "path": "microsoft.extensions.caching.hybrid/10.9.0",
+      "hashPath": "microsoft.extensions.caching.hybrid.10.9.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/10.0.11": {
       "type": "package",
@@ -1107,6 +1206,13 @@
       "sha512": "sha512-IPGrrZnRkuW7OlHDhUESZz4G5DLkW7Nej/O3Cx+0iTsgyU5XJxBgpsvTHLloo3WWuAKKbDHXBvWPVkX1deRh1Q==",
       "path": "npgsql.entityframeworkcore.postgresql/10.0.3",
       "hashPath": "npgsql.entityframeworkcore.postgresql.10.0.3.nupkg.sha512"
+    },
+    "RabbitMQ.Client/7.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k4b6RnTXpLbsF96V93ooNYxgPMnoA2tEm24B6AXNJr1mG8wwNYdA1XJtgU66L5xqeGyveS7SJriRzlX3cbqQNA==",
+      "path": "rabbitmq.client/7.2.2",
+      "hashPath": "rabbitmq.client.7.2.2.nupkg.sha512"
     },
     "System.ClientModel/1.8.0": {
       "type": "package",

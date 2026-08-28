@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\AuthService\Auth.API\Auth.API.csproj" />
+    <ProjectReference Include="..\..\CommunicationService\Communication.API\Communication.API.csproj" />
     <ProjectReference Include="..\..\Teach.Gateway\Teach.Gateway.csproj" />
     <ProjectReference Include="..\..\TeachService\Teach.API\Teach.API.csproj" />
   </ItemGroup>

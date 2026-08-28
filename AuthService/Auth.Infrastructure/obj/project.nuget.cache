@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Tpgl/GreWmA=",
+  "dgSpecHash": "0bbpKB93JNI=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "D:\\NuGetCache\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "D:\\NuGetCache\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
     "D:\\NuGetCache\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit\\9.2.1\\masstransit.9.2.1.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.abstractions\\9.2.1\\masstransit.abstractions.9.2.1.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.rabbitmq\\9.2.1\\masstransit.rabbitmq.9.2.1.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.11\\microsoft.aspnetcore.authentication.jwtbearer.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.bcl.cryptography\\10.0.2\\microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
@@ -27,11 +30,17 @@
     "D:\\NuGetCache\\microsoft.entityframeworkcore.relational\\10.0.11\\microsoft.entityframeworkcore.relational.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.entityframeworkcore.sqlserver\\10.0.11\\microsoft.entityframeworkcore.sqlserver.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.caching.abstractions\\10.0.11\\microsoft.extensions.caching.abstractions.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.caching.hybrid\\10.9.0\\microsoft.extensions.caching.hybrid.10.9.0.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.caching.memory\\10.0.11\\microsoft.extensions.caching.memory.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.configuration.abstractions\\10.0.11\\microsoft.extensions.configuration.abstractions.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.dependencyinjection\\10.0.11\\microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.dependencymodel\\10.0.11\\microsoft.extensions.dependencymodel.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.diagnostics.abstractions\\10.0.0\\microsoft.extensions.diagnostics.abstractions.10.0.0.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.diagnostics.healthchecks\\10.0.0\\microsoft.extensions.diagnostics.healthchecks.10.0.0.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.diagnostics.healthchecks.abstractions\\10.0.0\\microsoft.extensions.diagnostics.healthchecks.abstractions.10.0.0.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.fileproviders.abstractions\\10.0.0\\microsoft.extensions.fileproviders.abstractions.10.0.0.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.hosting.abstractions\\10.0.0\\microsoft.extensions.hosting.abstractions.10.0.0.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.logging\\10.0.11\\microsoft.extensions.logging.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.logging.abstractions\\10.0.11\\microsoft.extensions.logging.abstractions.10.0.11.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.extensions.options\\10.0.11\\microsoft.extensions.options.10.0.11.nupkg.sha512",
@@ -52,6 +61,7 @@
     "D:\\NuGetCache\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
     "D:\\NuGetCache\\npgsql\\10.0.3\\npgsql.10.0.3.nupkg.sha512",
     "D:\\NuGetCache\\npgsql.entityframeworkcore.postgresql\\10.0.3\\npgsql.entityframeworkcore.postgresql.10.0.3.nupkg.sha512",
+    "D:\\NuGetCache\\rabbitmq.client\\7.2.2\\rabbitmq.client.7.2.2.nupkg.sha512",
     "D:\\NuGetCache\\system.clientmodel\\1.8.0\\system.clientmodel.1.8.0.nupkg.sha512",
     "D:\\NuGetCache\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "D:\\NuGetCache\\system.composition\\9.0.0\\system.composition.9.0.0.nupkg.sha512",
@@ -65,7 +75,8 @@
     "D:\\NuGetCache\\system.identitymodel.tokens.jwt\\8.19.2\\system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512",
     "D:\\NuGetCache\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
     "D:\\NuGetCache\\system.security.cryptography.pkcs\\9.0.11\\system.security.cryptography.pkcs.9.0.11.nupkg.sha512",
-    "D:\\NuGetCache\\system.security.cryptography.protecteddata\\9.0.11\\system.security.cryptography.protecteddata.9.0.11.nupkg.sha512"
+    "D:\\NuGetCache\\system.security.cryptography.protecteddata\\9.0.11\\system.security.cryptography.protecteddata.9.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

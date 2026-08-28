@@ -8,15 +8,28 @@
     ".NETCoreApp,Version=v10.0": {
       "Auth.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "16.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.11",
           "Microsoft.EntityFrameworkCore": "10.0.11",
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
           "Microsoft.EntityFrameworkCore.Design": "10.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11",
+          "Microsoft.Extensions.Caching.Hybrid": "10.9.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3"
         },
         "runtime": {
           "Auth.Domain.dll": {}
+        }
+      },
+      "AutoMapper/16.2.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "8.19.2"
+        },
+        "runtime": {
+          "lib/net10.0/AutoMapper.dll": {
+            "assemblyVersion": "16.0.0.0",
+            "fileVersion": "16.2.0.0"
+          }
         }
       },
       "Azure.Core/1.50.0": {
@@ -515,6 +528,14 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.Hybrid/10.9.0": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Caching.Hybrid.dll": {
+            "assemblyVersion": "10.9.0.0",
+            "fileVersion": "10.900.26.41116"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyModel/10.0.11": {
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
@@ -845,6 +866,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/16.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PE8HgPc5BZJnAFwjvDTE72gWL6YrYib+V7+vxtLXDYz0CH/fFgbVcwLUC9UHk5ALwspZ6Vbmoo6PHvseIk/0ZA==",
+      "path": "automapper/16.2.0",
+      "hashPath": "automapper.16.2.0.nupkg.sha512"
+    },
     "Azure.Core/1.50.0": {
       "type": "package",
       "serviceable": true,
@@ -977,6 +1005,13 @@
       "sha512": "sha512-LClSs5cNN6za2Uk7IeH7RAP4Qe5EMXxFsD9i53ncPx21TVg04IEjoFyxvvsSNkq2/Ux9HyJsJ2qEO8Tl7Gcrrg==",
       "path": "microsoft.entityframeworkcore.sqlserver/10.0.11",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.10.0.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Hybrid/10.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0tHRbUCliInxTfPgN9K6RxrCVaWu9kyIT66vbIJ/YwA6BV2xa8vTqoE3JQXA2Rf2vRdgd29+HR6Ay6KmzDslw==",
+      "path": "microsoft.extensions.caching.hybrid/10.9.0",
+      "hashPath": "microsoft.extensions.caching.hybrid.10.9.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/10.0.11": {
       "type": "package",

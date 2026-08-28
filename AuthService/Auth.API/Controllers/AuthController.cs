@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using Auth.Application.Commands.Register.ConfirmStudentRegisterCode;
+using Auth.Application.Commands.Register.CreateStudent;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Auth.API.Controllers
@@ -14,7 +16,15 @@ namespace Auth.API.Controllers
         }
 
         [HttpPost("register-student")]
-        public async Task<IActionResult> Register([FromBody] CreateStudentCommand command, CancellationToken cancellationToken)
+        public async Task<IActionResult> RegisterStudent([FromBody] CreateStudentCommand command, CancellationToken cancellationToken)
+        {
+            await _mediator.Send(command, cancellationToken);
+            return Accepted();
+        }
+
+
+        [HttpPost("confirm-registration-code-student")]
+        public async Task<IActionResult> ConfirmRegistrationByCodeStudent([FromBody] ConfirmStudentRegisterCodeCommand command, CancellationToken cancellationToken)
         {
             await _mediator.Send(command, cancellationToken);
             return Accepted();

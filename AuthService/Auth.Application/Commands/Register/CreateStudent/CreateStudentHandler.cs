@@ -1,22 +1,27 @@
 ﻿using Auth.Application.Interfaces;
-using Auth.Domain.Exceptions;
 using Auth.Domain.Interfaces;
 using Auth.Domain.Models.Cache;
+using Auth.Domain.Models.Exceptions;
 using MediatR;
+using MassTransit;
 
 namespace Auth.Application.Commands.Register.CreateStudent
 {
     public class CreateStudentHandler : IRequestHandler<CreateStudentCommand, Unit>
     {
-        ICacheUsersRepository _cache;
-        IUsersRepository _usersRepository;
-        INumberProcessor _numberProcessor;
+        private readonly ICacheUsersRepository _cache;
+        private readonly IUsersRepository _usersRepository;
+        private readonly INumberProcessor _numberProcessor;
+        private readonly IEmailMessageService _emailMessageService;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public CreateStudentHandler(IUsersRepository usersRepository, ICacheUsersRepository cache, INumberProcessor numberProcessor)
+        public CreateStudentHandler(IUsersRepository usersRepository, ICacheUsersRepository cache, IEmailMessageService emailMessageService, INumberProcessor numberProcessor, IPublishEndpoint publishEndpoint)
         {
             _cache = cache;
             _usersRepository = usersRepository;
+            _emailMessageService = emailMessageService;
             _numberProcessor = numberProcessor;
+            _publishEndpoint = publishEndpoint;
         }
 
         public async Task<Unit> Handle(CreateStudentCommand command, CancellationToken cancellationToken)
@@ -41,7 +46,14 @@ namespace Auth.Application.Commands.Register.CreateStudent
 
             await _cache.SaveUserDataAsync<CreationStudentData>(creationStudentData.Id, creationStudentData.Email, creationStudentData, cancellationToken);
 
-            await _emailService.SendConfirmationEmailAsync(command.Email, confirmUserCode, confirmationLink, cancellationToken);
+            var emailMessage = _emailMessageService.CreateConfirmationEmail(
+              email: command.Email,
+              firstName: command.Name,
+              confirmationCode: confirmUserCode,
+              userId: creationStudentData.Id
+            );
+
+            await _publishEndpoint.Publish(emailMessage, cancellationToken);
 
             return Unit.Value;
         }

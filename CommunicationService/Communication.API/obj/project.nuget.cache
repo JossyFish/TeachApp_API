@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "h9Wuf25TFoc=",
+  "success": true,
+  "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+  "expectedPackageFiles": [
+    "D:\\NuGetCache\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}

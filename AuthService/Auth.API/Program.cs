@@ -1,6 +1,8 @@
 
+using Auth.API.Exceptions;
+using Auth.Application;
 using Auth.Application.Extensions;
-using Auth.Domain.Options;
+using Auth.Domain.Models.Options;
 using Auth.Infrastructure;
 using Auth.Infrastructure.Data;
 using Microsoft.Extensions.Options;
@@ -17,10 +19,21 @@ public class Program
         builder.Services.AddOpenApi();
         builder.Services.AddProblemDetails();
 
+        builder.Services.AddHybridCache();
+
         builder.Services.AddAuth();
 
-        builder.Services.AddInfrastructure(builder.Configuration);
+        builder.Services.Configure<AuthorizationOptions>(
+              builder.Configuration.GetSection(nameof(AuthorizationOptions)));
+        builder.Services.AddSingleton(provider =>
+            provider.GetRequiredService<IOptions<AuthorizationOptions>>().Value);
+        builder.Services.Configure<CacheOptions>(builder.Configuration.GetSection(nameof(CacheOptions)));
+        builder.Services.Configure<RabbitMQOptions>(builder.Configuration.GetSection(nameof(RabbitMQOptions)));
 
+        builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+
+        builder.Services.AddApplication();
+        builder.Services.AddInfrastructure(builder.Configuration);
 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -30,10 +43,13 @@ public class Program
         if (app.Environment.IsDevelopment())
         {
             app.MapOpenApi();
+            app.UseSwagger();
+            app.UseSwaggerUI();
         }
 
         app.UseHttpsRedirection();
-
+        app.UseExceptionHandler();
+        app.UseAuthentication();
         app.UseAuthorization();
 
 

@@ -5,6 +5,12 @@
     <Project Path="AuthService/Auth.Domain/Auth.Domain.csproj" Id="4350b7bb-851a-43fa-b4fa-480429858717" />
     <Project Path="AuthService/Auth.Infrastructure/Auth.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/CommunicationService/">
+    <Project Path="CommunicationService/Communication.API/Communication.API.csproj" />
+    <Project Path="CommunicationService/Communication.Application/Communication.Application.csproj" Id="22e0196f-bd21-4084-9a61-a5f3d32d0ab0" />
+    <Project Path="CommunicationService/Communication.Domain/Communication.Domain.csproj" Id="81bac6d9-d24e-47bb-8663-20f475dce51b" />
+    <Project Path="CommunicationService/Communication.Infrastructure/Communication.Infrastructure.csproj" Id="ac00a223-a13d-494b-ab5f-c446b0290a54" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/TeachApp.AppHost/TeachApp.AppHost.csproj" />
   </Folder>

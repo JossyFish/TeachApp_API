@@ -1,3 +1,4 @@
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\appsettings.Development.json
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\appsettings.json
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Auth.API.staticwebassets.endpoints.json
@@ -6,16 +7,25 @@ D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Auth.API
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Auth.API.runtimeconfig.json
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Auth.API.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Auth.API.pdb
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\AutoMapper.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Azure.Core.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Azure.Identity.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\DevOne.Security.Cryptography.BCrypt.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\FluentValidation.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Humanizer.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\MassTransit.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\MassTransit.Abstractions.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\MediatR.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\MediatR.Contracts.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
-D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
@@ -26,6 +36,7 @@ D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsof
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Extensions.Caching.Hybrid.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Identity.Client.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Microsoft.Identity.Client.Broker.dll
@@ -44,6 +55,7 @@ D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Mono.Tex
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Newtonsoft.Json.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Npgsql.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\RabbitMQ.Client.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -177,4 +189,3 @@ D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\refint\A
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\Auth.API.pdb
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\Auth.API.genruntimeconfig.cache
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\ref\Auth.API.dll
-D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

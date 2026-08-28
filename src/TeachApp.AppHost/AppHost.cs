@@ -19,11 +19,18 @@ var api = builder.AddProject<Projects.Teach_API>("api")
     .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
 
 var authApi = builder.AddProject<Projects.Auth_API>("auth-api")
+    .WithReference(rabbitmq)
+    .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
+
+var communicationApi = builder.AddProject<Projects.Communication_API>("communication-api")
+    .WithReference(rabbitmq)
     .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
 
 builder.AddProject<Projects.Teach_Gateway>("teach-gateway")
     .WithReference(api)
     .WithReference(authApi)
     .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
+
+builder.AddProject<Projects.Communication_API>("communication-api");
 
 builder.Build().Run();

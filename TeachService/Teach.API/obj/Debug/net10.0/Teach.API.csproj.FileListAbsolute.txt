@@ -384,4 +384,3 @@ D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\obj\Debug\net10.0\refint
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\obj\Debug\net10.0\Teach.API.pdb
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\obj\Debug\net10.0\Teach.API.genruntimeconfig.cache
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\obj\Debug\net10.0\ref\Teach.API.dll
-D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

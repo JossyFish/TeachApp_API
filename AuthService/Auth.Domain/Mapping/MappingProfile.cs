@@ -8,7 +8,16 @@ namespace Auth.Domain.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<UserEntity, User>().ReverseMap();
+            CreateMap<User, UserEntity>()
+                 .ForMember(dest => dest.Roles, opt => opt.Ignore())
+                 .ForMember(dest => dest.Student, opt => opt.Ignore())
+                 .ForMember(dest => dest.Teacher, opt => opt.Ignore())
+                 .ForMember(dest => dest.Admin, opt => opt.Ignore());
+
+            CreateMap<UserEntity, User>()
+                .ForMember(dest => dest.Roles, opt => opt.Ignore());
+
+            CreateMap<StudentEntity, Student>().ReverseMap();
         }
     }
 }
