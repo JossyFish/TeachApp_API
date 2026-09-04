@@ -150,6 +150,12 @@ D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\Json.M
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\JsonPatch.Net.dll
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\JsonPointer.Net.dll
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\KubernetesClient.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MassTransit.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MassTransit.Abstractions.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MediatR.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MediatR.Contracts.dll
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MessagePack.dll
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\MessagePack.Annotations.dll
 D:\KAMILA\code\lernapp\Teach.API\TeachService\Teach.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll

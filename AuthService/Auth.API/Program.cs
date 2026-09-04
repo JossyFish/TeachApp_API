@@ -14,6 +14,11 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.Logging.ClearProviders();
+        builder.Logging.AddConsole();
+        builder.Logging.AddDebug();
+
+
 
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();

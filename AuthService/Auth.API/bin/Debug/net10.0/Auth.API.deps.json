@@ -11,7 +11,11 @@
           "Auth.Application": "1.0.0",
           "Auth.Domain": "1.0.0",
           "Auth.Infrastructure": "1.0.0",
-          "MediatR": "14.2.0",
+          "MassTransit": "8.3.4",
+          "MassTransit.Extensions.DependencyInjection": "7.3.1",
+          "MassTransit.RabbitMQ": "8.3.4",
+          "MediatR": "11.1.0",
+          "MediatR.Contracts": "1.0.1",
           "Microsoft.AspNetCore.OpenApi": "10.0.11",
           "Microsoft.EntityFrameworkCore": "10.0.11",
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
@@ -107,54 +111,75 @@
           }
         }
       },
-      "MassTransit/9.2.1": {
+      "MassTransit/8.3.4": {
         "dependencies": {
-          "MassTransit.Abstractions": "9.2.1"
+          "MassTransit.Abstractions": "8.3.4"
         },
         "runtime": {
-          "lib/net10.0/MassTransit.dll": {
-            "assemblyVersion": "9.2.1.0",
-            "fileVersion": "9.2.1.0"
+          "lib/net9.0/MassTransit.dll": {
+            "assemblyVersion": "8.3.4.0",
+            "fileVersion": "8.3.4.0"
           }
         }
       },
-      "MassTransit.Abstractions/9.2.1": {
+      "MassTransit.Abstractions/8.3.4": {
         "runtime": {
-          "lib/net10.0/MassTransit.Abstractions.dll": {
-            "assemblyVersion": "9.2.1.0",
-            "fileVersion": "9.2.1.0"
+          "lib/net9.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "8.3.4.0",
+            "fileVersion": "8.3.4.0"
           }
         }
       },
-      "MassTransit.RabbitMQ/9.2.1": {
+      "MassTransit.Extensions.DependencyInjection/7.3.1": {
         "dependencies": {
-          "MassTransit": "9.2.1",
+          "MassTransit": "8.3.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll": {
+            "assemblyVersion": "7.3.1.0",
+            "fileVersion": "7.3.1.0"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/8.3.4": {
+        "dependencies": {
+          "MassTransit": "8.3.4",
           "RabbitMQ.Client": "7.2.2"
         },
         "runtime": {
-          "lib/net10.0/MassTransit.RabbitMqTransport.dll": {
-            "assemblyVersion": "9.2.1.0",
-            "fileVersion": "9.2.1.0"
+          "lib/net9.0/MassTransit.RabbitMqTransport.dll": {
+            "assemblyVersion": "8.3.4.0",
+            "fileVersion": "8.3.4.0"
           }
         }
       },
-      "MediatR/14.2.0": {
+      "MediatR/11.1.0": {
         "dependencies": {
-          "MediatR.Contracts": "2.0.1",
-          "Microsoft.IdentityModel.JsonWebTokens": "8.19.2"
+          "MediatR.Contracts": "1.0.1"
         },
         "runtime": {
-          "lib/net10.0/MediatR.dll": {
-            "assemblyVersion": "14.0.0.0",
-            "fileVersion": "14.2.0.0"
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.1.0.0"
           }
         }
       },
-      "MediatR.Contracts/2.0.1": {
+      "MediatR.Contracts/1.0.1": {
         "runtime": {
           "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "assemblyVersion": "2.0.1.0",
-            "fileVersion": "2.0.1.0"
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+        "dependencies": {
+          "MediatR": "11.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.1.0.0"
           }
         }
       },
@@ -1015,9 +1040,12 @@
           "BCrypt.Net-Next": "4.2.0",
           "FluentValidation": "12.1.1",
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-          "MassTransit": "9.2.1",
-          "MassTransit.RabbitMQ": "9.2.1",
-          "MediatR": "14.2.0",
+          "MassTransit": "8.3.4",
+          "MassTransit.Extensions.DependencyInjection": "7.3.1",
+          "MassTransit.RabbitMQ": "8.3.4",
+          "MediatR": "11.1.0",
+          "MediatR.Contracts": "1.0.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.EntityFrameworkCore": "10.0.11",
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11",
@@ -1034,6 +1062,11 @@
       "Auth.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "16.2.0",
+          "MassTransit": "8.3.4",
+          "MassTransit.Extensions.DependencyInjection": "7.3.1",
+          "MassTransit.RabbitMQ": "8.3.4",
+          "MediatR": "11.1.0",
+          "MediatR.Contracts": "1.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.11",
           "Microsoft.EntityFrameworkCore": "10.0.11",
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
@@ -1051,8 +1084,11 @@
       "Auth.Infrastructure/1.0.0": {
         "dependencies": {
           "Auth.Domain": "1.0.0",
-          "MassTransit": "9.2.1",
-          "MassTransit.RabbitMQ": "9.2.1",
+          "MassTransit": "8.3.4",
+          "MassTransit.Extensions.DependencyInjection": "7.3.1",
+          "MassTransit.RabbitMQ": "8.3.4",
+          "MediatR": "11.1.0",
+          "MediatR.Contracts": "1.0.1",
           "Microsoft.Extensions.Caching.Hybrid": "10.9.0",
           "RabbitMQ.Client": "7.2.2"
         },
@@ -1127,40 +1163,54 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MassTransit/9.2.1": {
+    "MassTransit/8.3.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-99SFdhxyAxv5YhlXIwwpKjJYKy+cLMS+nvU5/fulUZB5P1WhXyUPjpu9zmxM+QY1TRnQkT3lyGXJkEPkb4Z3pw==",
-      "path": "masstransit/9.2.1",
-      "hashPath": "masstransit.9.2.1.nupkg.sha512"
+      "sha512": "sha512-mj/1OG4wAkw7M/bSBPMOGSJUHDh6daqaXaGnIEvivyZvBxFeoTV95/CTeid6LWLydKmE6mexW/8dcallrqy+cg==",
+      "path": "masstransit/8.3.4",
+      "hashPath": "masstransit.8.3.4.nupkg.sha512"
     },
-    "MassTransit.Abstractions/9.2.1": {
+    "MassTransit.Abstractions/8.3.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-R5+43Hs4O4PYzbwkgZnEO1a66Smdk1y4zjaUMKVgXPnBJSZnT3IuCATM6w4fPDfEezT2SEezfFZ09cZVpLT7eg==",
-      "path": "masstransit.abstractions/9.2.1",
-      "hashPath": "masstransit.abstractions.9.2.1.nupkg.sha512"
+      "sha512": "sha512-0a7nxUzJIP6v2pQYQQ8RhQR+XFtFCxUR9dJJK7ewLONuxj26issAoJicppCJdXHGaBdxAMCvWvKulHjGpuJoeA==",
+      "path": "masstransit.abstractions/8.3.4",
+      "hashPath": "masstransit.abstractions.8.3.4.nupkg.sha512"
     },
-    "MassTransit.RabbitMQ/9.2.1": {
+    "MassTransit.Extensions.DependencyInjection/7.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PxzPuHSrF+HKutU40CWthKDZO6/cdaHNuExf5OO3yoxTE9yf8399cYYbGtZZXZaKILkWOMsufM2EjtgRzY6tjQ==",
-      "path": "masstransit.rabbitmq/9.2.1",
-      "hashPath": "masstransit.rabbitmq.9.2.1.nupkg.sha512"
+      "sha512": "sha512-s1gnkYUngHNP9m2+Jx1vuUAvoVm4KB3oVbtFJUlXNtBBzhRFq1N3Y0w5iiew60ZBLm0j0RQcSRbI0ahMOkL+og==",
+      "path": "masstransit.extensions.dependencyinjection/7.3.1",
+      "hashPath": "masstransit.extensions.dependencyinjection.7.3.1.nupkg.sha512"
     },
-    "MediatR/14.2.0": {
+    "MassTransit.RabbitMQ/8.3.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1vqNVS6ijU0IF78vDfIE99pi0iTa+M/1ztRlM98P+KL+Loi/O4knaR2+ex0AqbT5xBl01VFryjuYUAFtvGwzOQ==",
-      "path": "mediatr/14.2.0",
-      "hashPath": "mediatr.14.2.0.nupkg.sha512"
+      "sha512": "sha512-SZ9C/s4wPTbqRUwkzjzuyJ1ETZg+Izppr6YxdpSntgcDSED6DgBIDduly80qJ8/mg26BE2wETD8N1+LrnzD12A==",
+      "path": "masstransit.rabbitmq/8.3.4",
+      "hashPath": "masstransit.rabbitmq.8.3.4.nupkg.sha512"
     },
-    "MediatR.Contracts/2.0.1": {
+    "MediatR/11.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
-      "path": "mediatr.contracts/2.0.1",
-      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+      "sha512": "sha512-YIbtrLOyeCuIv8vIuHL/mMdls5xmgS36pIOJDxKZuu55nxA2MI2Z+E/Uk0z+F/LE11AGmpjplOM0NZ91m5LQBA==",
+      "path": "mediatr/11.1.0",
+      "hashPath": "mediatr.11.1.0.nupkg.sha512"
+    },
+    "MediatR.Contracts/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "path": "mediatr.contracts/1.0.1",
+      "hashPath": "mediatr.contracts.1.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.11": {
       "type": "package",

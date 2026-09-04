@@ -7,6 +7,12 @@ D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Teach.Gateway.r
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Teach.Gateway.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Teach.Gateway.pdb
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Humanizer.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\MassTransit.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\MassTransit.Abstractions.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\MediatR.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\MediatR.Contracts.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Microsoft.Build.Framework.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
@@ -24,6 +30,7 @@ D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Microsoft.OpenA
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Mono.TextTemplating.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\RabbitMQ.Client.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\KAMILA\code\lernapp\Teach.API\Teach.Gateway\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll

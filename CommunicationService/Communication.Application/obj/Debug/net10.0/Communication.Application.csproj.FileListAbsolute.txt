@@ -1,6 +1,7 @@
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\bin\Debug\net10.0\Communication.Application.deps.json
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\bin\Debug\net10.0\Communication.Application.dll
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\bin\Debug\net10.0\Communication.Application.pdb
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\Communication.Application.csproj.AssemblyReference.cache
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\Communication.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\Communication.Application.AssemblyInfoInputs.cache
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\Communication.Application.AssemblyInfo.cs

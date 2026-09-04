@@ -1,11 +1,58 @@
 {
   "version": 2,
-  "dgSpecHash": "h9Wuf25TFoc=",
+  "dgSpecHash": "GKPJPZMTRsg=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
   "expectedPackageFiles": [
+    "D:\\NuGetCache\\masstransit\\8.3.4\\masstransit.8.3.4.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.abstractions\\8.3.4\\masstransit.abstractions.8.3.4.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.extensions.dependencyinjection\\7.3.1\\masstransit.extensions.dependencyinjection.7.3.1.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.rabbitmq\\8.3.4\\masstransit.rabbitmq.8.3.4.nupkg.sha512",
+    "D:\\NuGetCache\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "D:\\NuGetCache\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
-    "D:\\NuGetCache\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+    "D:\\NuGetCache\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.logging\\10.0.11\\microsoft.extensions.logging.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.extensions.options\\10.0.11\\microsoft.extensions.options.10.0.11.nupkg.sha512",
+    "D:\\NuGetCache\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
+    "D:\\NuGetCache\\rabbitmq.client\\7.2.2\\rabbitmq.client.7.2.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.DependencyInjection.Abstractions не будет урезано. Этот пакет доступен автоматически, и на него не нужно явно ссылаться. Удалите элемент PackageReference.",
+      "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Logging не будет урезано. Этот пакет доступен автоматически, и на него не нужно явно ссылаться. Удалите элемент PackageReference.",
+      "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+      "libraryId": "Microsoft.Extensions.Logging",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Options не будет урезано. Этот пакет доступен автоматически, и на него не нужно явно ссылаться. Удалите элемент PackageReference.",
+      "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Communication.API.csproj",
+      "libraryId": "Microsoft.Extensions.Options",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

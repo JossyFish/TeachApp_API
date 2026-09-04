@@ -36,12 +36,30 @@
         }
       }
     },
-    "/WeatherForecast": {
-      "get": {
+    "/api/Auth/confirm-registration-code-student": {
+      "post": {
         "tags": [
-          "WeatherForecast"
+          "Auth"
         ],
-        "operationId": "GetWeatherForecast",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmStudentRegisterCodeCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmStudentRegisterCodeCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmStudentRegisterCodeCommand"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -52,6 +70,20 @@
   },
   "components": {
     "schemas": {
+      "ConfirmStudentRegisterCodeCommand": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "confirmationCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateStudentCommand": {
         "type": "object",
         "properties": {
@@ -79,9 +111,6 @@
   "tags": [
     {
       "name": "Auth"
-    },
-    {
-      "name": "WeatherForecast"
     }
   ]
 }

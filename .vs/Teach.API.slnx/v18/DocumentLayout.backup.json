@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5060E1F4-8D8E-EDE8-20C8-B8352C9C13E7}|AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.infrastructure\\data\\configurations\\rolepermissionconfiguration .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5060E1F4-8D8E-EDE8-20C8-B8352C9C13E7}|AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:authservice\\auth.infrastructure\\data\\configurations\\rolepermissionconfiguration .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\register\\createstudent\\createstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\register\\createstudent\\createstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +23,16 @@
       "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\register\\confirmstudentregistercode\\confirmstudentregistercodehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\register\\createstudent\\createstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\register\\createstudent\\createstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5060E1F4-8D8E-EDE8-20C8-B8352C9C13E7}|AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5060E1F4-8D8E-EDE8-20C8-B8352C9C13E7}|AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:authservice\\auth.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DEA31D-5662-B0B0-54CF-4240081CD814}|CommunicationService\\Communication.API\\Communication.API.csproj|d:\\kamila\\code\\lernapp\\teach.api\\communicationservice\\communication.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16DEA31D-5662-B0B0-54CF-4240081CD814}|CommunicationService\\Communication.API\\Communication.API.csproj|solutionrelative:communicationservice\\communication.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +42,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RolePermissionConfiguration .cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\Data\\Configurations\\RolePermissionConfiguration .cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Infrastructure\\Data\\Configurations\\RolePermissionConfiguration .cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\Data\\Configurations\\RolePermissionConfiguration .cs",
+              "RelativeToolTip": "AuthService\\Auth.Infrastructure\\Data\\Configurations\\RolePermissionConfiguration .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T12:53:11.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.API\\Program.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
+              "RelativeToolTip": "AuthService\\Auth.API\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwD4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T12:41:13.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Application\\DependencyInjection.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "AuthService\\Auth.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T12:26:23.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "AuthService\\Auth.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T12:22:08.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Program.cs",
+              "RelativeDocumentMoniker": "CommunicationService\\Communication.API\\Program.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.API\\Program.cs",
+              "RelativeToolTip": "CommunicationService\\Communication.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T13:02:55.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ConfirmStudentRegisterCodeHandler.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
               "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-27T13:01:56.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-27T12:36:23.031Z",
               "EditorCaption": ""
@@ -62,22 +143,10 @@
               "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
               "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwAsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA4wBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-26T13:25:36.367Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
-              "RelativeDocumentMoniker": "AuthService\\Auth.API\\Program.cs",
-              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
-              "RelativeToolTip": "AuthService\\Auth.API\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T11:49:46.63Z"
             }
           ]
         }

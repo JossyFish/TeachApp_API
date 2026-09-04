@@ -1,7 +1,23 @@
 [
   {
     "ContainingType": "Auth.API.Controllers.AuthController",
-    "Method": "Register",
+    "Method": "ConfirmRegistrationByCodeStudent",
+    "RelativePath": "api/Auth/confirm-registration-code-student",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Auth.Application.Commands.Register.ConfirmStudentRegisterCode.ConfirmStudentRegisterCodeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.AuthController",
+    "Method": "RegisterStudent",
     "RelativePath": "api/Auth/register-student",
     "HttpMethod": "POST",
     "IsController": true,
@@ -14,16 +30,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Auth.API.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

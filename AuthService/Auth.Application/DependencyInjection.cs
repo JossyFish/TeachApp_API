@@ -3,6 +3,7 @@ using Auth.Application.Extensions;
 using Auth.Application.Interfaces;
 using Auth.Application.Services;
 using FluentValidation;
+using MassTransit;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,10 +14,8 @@ namespace Auth.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddMediatR(cfg =>
-            {
-                cfg.RegisterServicesFromAssembly(typeof(CreateStudentCommand).Assembly);
-            });
+            services.AddMediatR(typeof(CreateStudentCommand).Assembly);
+
 
             services.AddValidatorsFromAssemblyContaining<CreateStudentValidator>();
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));

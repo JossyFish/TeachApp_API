@@ -31,6 +31,4 @@ builder.AddProject<Projects.Teach_Gateway>("teach-gateway")
     .WithReference(authApi)
     .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
 
-builder.AddProject<Projects.Communication_API>("communication-api");
-
 builder.Build().Run();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Xo1emD5RGSY=",
+  "dgSpecHash": "bQVSoLQtjKk=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\src\\TeachApp.AppHost\\TeachApp.AppHost.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,12 @@
     "D:\\NuGetCache\\jsonpatch.net\\3.3.0\\jsonpatch.net.3.3.0.nupkg.sha512",
     "D:\\NuGetCache\\jsonpointer.net\\5.2.0\\jsonpointer.net.5.2.0.nupkg.sha512",
     "D:\\NuGetCache\\kubernetesclient\\19.0.2\\kubernetesclient.19.0.2.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit\\8.3.4\\masstransit.8.3.4.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.abstractions\\8.3.4\\masstransit.abstractions.8.3.4.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.extensions.dependencyinjection\\7.3.1\\masstransit.extensions.dependencyinjection.7.3.1.nupkg.sha512",
+    "D:\\NuGetCache\\masstransit.rabbitmq\\8.3.4\\masstransit.rabbitmq.8.3.4.nupkg.sha512",
+    "D:\\NuGetCache\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "D:\\NuGetCache\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "D:\\NuGetCache\\messagepack\\2.5.302\\messagepack.2.5.302.nupkg.sha512",
     "D:\\NuGetCache\\messagepack.annotations\\2.5.302\\messagepack.annotations.2.5.302.nupkg.sha512",
     "D:\\NuGetCache\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

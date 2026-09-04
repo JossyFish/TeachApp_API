@@ -57,6 +57,26 @@
               "target": "Package",
               "version": "[16.2.0, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.3.4, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.3.4, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Contracts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[10.0.11, )"
@@ -443,11 +463,23 @@
           "dependencies": {
             "MassTransit": {
               "target": "Package",
-              "version": "[9.2.1, )"
+              "version": "[8.3.4, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",
-              "version": "[9.2.1, )"
+              "version": "[8.3.4, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Contracts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
