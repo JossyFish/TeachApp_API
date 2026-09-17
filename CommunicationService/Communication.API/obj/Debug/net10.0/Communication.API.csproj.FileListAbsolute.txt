@@ -45,3 +45,6 @@ D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\obj\Debu
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\obj\Debug\net10.0\Communication.API.pdb
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\obj\Debug\net10.0\Communication.API.genruntimeconfig.cache
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\obj\Debug\net10.0\ref\Communication.API.dll
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\bin\Debug\net10.0\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\bin\Debug\net10.0\TeachApp.Contracts.pdb
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

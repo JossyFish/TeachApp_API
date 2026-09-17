@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Auth.API.Controllers.AuthController",
+    "Method": "LoginStudent",
+    "RelativePath": "api/Auth/login-student",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Auth.Application.Commands.Auth.LoginStudent.LoginStudentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.AuthController",
     "Method": "RegisterStudent",
     "RelativePath": "api/Auth/register-student",
     "HttpMethod": "POST",

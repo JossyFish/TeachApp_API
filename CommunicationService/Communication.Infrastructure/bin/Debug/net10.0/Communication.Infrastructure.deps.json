@@ -16,7 +16,8 @@
           "MediatR.Contracts": "1.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11",
           "Microsoft.Extensions.Logging": "10.0.11",
-          "RabbitMQ.Client": "7.2.2"
+          "RabbitMQ.Client": "7.2.2",
+          "TeachApp.Contracts": "1.0.0"
         },
         "runtime": {
           "Communication.Infrastructure.dll": {}
@@ -256,6 +257,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "TeachApp.Contracts/1.0.0": {
+        "runtime": {
+          "TeachApp.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -406,6 +415,11 @@
       "hashPath": "system.threading.ratelimiting.8.0.0.nupkg.sha512"
     },
     "Communication.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeachApp.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

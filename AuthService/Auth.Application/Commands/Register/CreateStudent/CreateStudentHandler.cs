@@ -26,9 +26,9 @@ namespace Auth.Application.Commands.Register.CreateStudent
 
         public async Task<Unit> Handle(CreateStudentCommand command, CancellationToken cancellationToken)
         {
-            //var existingUser = await _usersRepository.GetByEmailAsync(command.Email, cancellationToken);
-            //if (existingUser != null)
-            //    throw new UserAlreadyExistException(command.Email);
+            var existingUser = await _usersRepository.GetByEmailAsync(command.Email, cancellationToken);
+            if (existingUser != null)
+                throw new UserAlreadyExistException(command.Email);
 
             await _cache.RemoveUserDataByEmailAsync<CreationStudentData>(command.Email, cancellationToken);
 

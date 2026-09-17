@@ -19,15 +19,14 @@ namespace Auth.API.Exceptions
                     Detail = exception.Message,
                     Extensions = { ["email"] = ((UserAlreadyExistException)exception).Email }
                 },
-
-                //UserNotFoundException userNotFound => new ProblemDetails
-                //{
-                //    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-                //    Title = "Not Found",
-                //    Status = StatusCodes.Status404NotFound,
-                //    Detail = exception.Message,
-                //    Extensions = { ["email"] = userNotFound.Email }
-                //},
+                UserNotFoundException userNotFound => new ProblemDetails
+                {
+                    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+                    Title = "Not Found",
+                    Status = StatusCodes.Status404NotFound,
+                    Detail = exception.Message,
+                    Extensions = { ["email"] = userNotFound.Email, ["userId"] = userNotFound.UserId }
+                },
 
                 //UserUnauthorizedException unauthorized => new ProblemDetails
                 //{
@@ -76,14 +75,14 @@ namespace Auth.API.Exceptions
                 //}
                 //},
 
-                //InvalidPasswordException invalidPassword => new ProblemDetails
-                //{
-                //    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-                //    Title = "Invalid Password",
-                //    Status = StatusCodes.Status400BadRequest,
-                //    Detail = exception.Message,
-                //    Extensions = { ["password"] = invalidPassword.Password }
-                //},
+                InvalidCredentialsException invalidCredentials => new ProblemDetails
+                {
+                    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+                    Title = "Invalid Credentials",
+                    Status = StatusCodes.Status401Unauthorized,
+                    Detail = exception.Message,
+                    Extensions = {  }
+                },
 
                 Domain.Models.Exceptions.ValidationException validation => new ProblemDetails
                 {

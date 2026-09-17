@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rb3CbQtLvaA=",
+  "dgSpecHash": "uqYJMoV02EM=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\TeachService\\Teach.API\\Teach.API.csproj",
   "expectedPackageFiles": [
@@ -103,5 +103,15 @@
     "D:\\NuGetCache\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
     "D:\\NuGetCache\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json.",
+      "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\TeachService\\Teach.API\\Teach.API.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\TeachService\\Teach.API\\Teach.API.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

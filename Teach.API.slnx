@@ -18,4 +18,5 @@
     <Project Path="TeachService/Teach.API/Teach.API.csproj" />
   </Folder>
   <Project Path="Teach.Gateway/Teach.Gateway.csproj" />
+  <Project Path="TeachApp.Contracts/TeachApp.Contracts.csproj" Id="9cff54aa-5393-4b91-969c-d38137e2ce3f" />
 </Solution>

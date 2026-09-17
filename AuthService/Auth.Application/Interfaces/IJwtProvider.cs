@@ -4,7 +4,8 @@ namespace Auth.Application.Interfaces
 {
     public interface IJwtProvider
     {
-        string GenerateToken(Guid userId, Role[] roles);
-        string GenerateToken(Guid userId, Role role);
+        string GenerateAccessToken(Guid userId);
+        string GenerateRefreshToken(Guid userId, Guid sessionId);
+        Guid? ValidateRefreshToken(string token, out Guid? sessionId);
     }
 }

@@ -13,17 +13,13 @@ namespace Auth.Application.Services
     {
         private readonly JwtOptions _options = options.Value;
 
-        public string GenerateToken(Guid userId, Role[] roles)
+        public string GenerateAccessToken(Guid userId)
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, userId.ToString())
+                new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
+                new Claim("token_type", "access")
             };
-
-            foreach (var role in roles)
-            {
-                claims.Add(new Claim(ClaimTypes.Role, role.ToString()));
-            }
 
             var signingCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey)),
@@ -32,16 +28,67 @@ namespace Auth.Application.Services
             var token = new JwtSecurityToken(
                 claims: claims,
                 signingCredentials: signingCredentials,
-                expires: DateTime.UtcNow.AddHours(_options.ExpitesHours));
+                expires: DateTime.UtcNow.AddMinutes(_options.ExpiresMinutes));
 
             var tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 
             return tokenValue;
         }
 
-        public string GenerateToken(Guid userId, Role role)
+        public string GenerateRefreshToken(Guid userId, Guid sessionId)
         {
-            return GenerateToken(userId, new[] { role });
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
+                new Claim("session_id", sessionId.ToString()),
+                new Claim("token_type", "refresh")
+            };
+
+            var signingCredentials = new SigningCredentials(
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.RefreshSecretKey)),
+                SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                signingCredentials: signingCredentials,
+                expires: DateTime.UtcNow.AddDays(_options.RefreshExpiresDays));
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public Guid? ValidateRefreshToken(string token, out Guid? sessionId)
+        {
+            sessionId = null;
+            var handler = new JwtSecurityTokenHandler();
+
+            try
+            {
+                var principal = handler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(_options.RefreshSecretKey))
+                }, out _);
+
+                var userIdClaim = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var sessionIdClaim = principal.FindFirst("session_id")?.Value;
+
+                if (Guid.TryParse(userIdClaim, out var userId) &&
+                    Guid.TryParse(sessionIdClaim, out var sid))
+                {
+                    sessionId = sid;
+                    return userId;
+                }
+
+                return null;
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }

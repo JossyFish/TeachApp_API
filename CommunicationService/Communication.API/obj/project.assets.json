@@ -233,13 +233,24 @@
           "MassTransit.RabbitMQ": "8.3.4",
           "MediatR": "11.1.0",
           "MediatR.Contracts": "1.0.1",
-          "RabbitMQ.Client": "7.2.2"
+          "RabbitMQ.Client": "7.2.2",
+          "TeachApp.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Communication.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/Communication.Infrastructure.dll": {}
+        }
+      },
+      "TeachApp.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TeachApp.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeachApp.Contracts.dll": {}
         }
       }
     }
@@ -527,6 +538,11 @@
       "type": "project",
       "path": "../Communication.Infrastructure/Communication.Infrastructure.csproj",
       "msbuildProject": "../Communication.Infrastructure/Communication.Infrastructure.csproj"
+    },
+    "TeachApp.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../TeachApp.Contracts/TeachApp.Contracts.csproj",
+      "msbuildProject": "../../TeachApp.Contracts/TeachApp.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -664,7 +680,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

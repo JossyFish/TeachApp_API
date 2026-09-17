@@ -1050,7 +1050,8 @@
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11",
           "Microsoft.Extensions.Caching.Hybrid": "10.9.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+          "TeachApp.Contracts": "1.0.0"
         },
         "runtime": {
           "Auth.Application.dll": {
@@ -1094,6 +1095,14 @@
         },
         "runtime": {
           "Auth.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TeachApp.Contracts/1.0.0": {
+        "runtime": {
+          "TeachApp.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1587,6 +1596,11 @@
       "sha512": ""
     },
     "Auth.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeachApp.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

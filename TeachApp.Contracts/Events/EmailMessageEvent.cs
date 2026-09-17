@@ -1,4 +1,4 @@
-﻿namespace Auth.Domain.Models.Events
+﻿namespace TeachApp.Contracts.Events
 {
     public class EmailMessageEvent
     {

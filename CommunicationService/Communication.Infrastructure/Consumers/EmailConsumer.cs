@@ -1,7 +1,7 @@
 ﻿using Communication.Domain.Interfaces;
-using Communication.Domain.Models.Events;
 using MassTransit;
 using Microsoft.Extensions.Logging;
+using TeachApp.Contracts.Events;
 
 namespace Communication.Infrastructure.Consumers
 {

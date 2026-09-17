@@ -1,6 +1,6 @@
 ﻿using Auth.Application.Interfaces;
-using Auth.Domain.Models.Events;
 using Microsoft.Extensions.Logging;
+using TeachApp.Contracts.Events;
 
 namespace Auth.Application.Services
 {

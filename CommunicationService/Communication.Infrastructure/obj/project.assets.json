@@ -371,6 +371,16 @@
         "runtime": {
           "bin/placeholder/Communication.Domain.dll": {}
         }
+      },
+      "TeachApp.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TeachApp.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeachApp.Contracts.dll": {}
+        }
       }
     }
   },
@@ -923,6 +933,11 @@
       "type": "project",
       "path": "../Communication.Domain/Communication.Domain.csproj",
       "msbuildProject": "../Communication.Domain/Communication.Domain.csproj"
+    },
+    "TeachApp.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../TeachApp.Contracts/TeachApp.Contracts.csproj",
+      "msbuildProject": "../../TeachApp.Contracts/TeachApp.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -935,7 +950,8 @@
       "MediatR.Contracts >= 1.0.1",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.11",
       "Microsoft.Extensions.Logging >= 10.0.11",
-      "RabbitMQ.Client >= 7.2.2"
+      "RabbitMQ.Client >= 7.2.2",
+      "TeachApp.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -974,6 +990,9 @@
           "projectReferences": {
             "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.Domain\\Communication.Domain.csproj": {
               "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\CommunicationService\\Communication.Domain\\Communication.Domain.csproj"
+            },
+            "D:\\KAMILA\\code\\lernapp\\Teach.API\\TeachApp.Contracts\\TeachApp.Contracts.csproj": {
+              "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\TeachApp.Contracts\\TeachApp.Contracts.csproj"
             }
           }
         }
@@ -1044,7 +1063,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

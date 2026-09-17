@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\TeachApp.Contracts\TeachApp.Contracts.csproj" />
     <ProjectReference Include="..\Communication.Domain\Communication.Domain.csproj" />
   </ItemGroup>
 

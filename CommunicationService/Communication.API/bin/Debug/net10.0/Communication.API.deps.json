@@ -148,10 +148,19 @@
           "MassTransit.RabbitMQ": "8.3.4",
           "MediatR": "11.1.0",
           "MediatR.Contracts": "1.0.1",
-          "RabbitMQ.Client": "7.2.2"
+          "RabbitMQ.Client": "7.2.2",
+          "TeachApp.Contracts": "1.0.0"
         },
         "runtime": {
           "Communication.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TeachApp.Contracts/1.0.0": {
+        "runtime": {
+          "TeachApp.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -239,6 +248,11 @@
       "sha512": ""
     },
     "Communication.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeachApp.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -191,4 +191,6 @@ D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\refint\A
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\Auth.API.pdb
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\Auth.API.genruntimeconfig.cache
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\ref\Auth.API.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\TeachApp.Contracts.pdb
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

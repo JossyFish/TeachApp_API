@@ -11,3 +11,4 @@ D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\refint\Communication.Application.dll
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\Communication.Application.pdb
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\ref\Communication.Application.dll
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Application\obj\Debug\net10.0\Communic.5A9CFC26.Up2Date

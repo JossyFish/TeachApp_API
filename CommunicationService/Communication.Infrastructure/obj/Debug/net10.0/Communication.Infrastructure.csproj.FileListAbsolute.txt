@@ -14,3 +14,5 @@ D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructu
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\refint\Communication.Infrastructure.dll
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\Communication.Infrastructure.pdb
 D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\obj\Debug\net10.0\ref\Communication.Infrastructure.dll
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\bin\Debug\net10.0\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\CommunicationService\Communication.Infrastructure\bin\Debug\net10.0\TeachApp.Contracts.pdb

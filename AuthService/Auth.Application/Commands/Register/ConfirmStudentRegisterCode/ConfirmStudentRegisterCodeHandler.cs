@@ -5,8 +5,11 @@ using Auth.Domain.Interfaces;
 using Auth.Domain.Models;
 using Auth.Domain.Models.Cache;
 using Auth.Domain.Models.Exceptions;
+using Auth.Domain.Models.Options;
+using Auth.Infrastructure.Repositories;
 using MassTransit;
 using MediatR;
+using Microsoft.Extensions.Options;
 
 namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
 {
@@ -17,14 +20,19 @@ namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
         private readonly IJwtProvider _jwtProvider;
         private readonly IEmailMessageService _emailMessageService;
         private readonly IPublishEndpoint _publishEndpoint;
+        private readonly ISessionCacheRepository _sessionCacheRepository;
+        private readonly JwtOptions _jwtOptions;
 
-        public ConfirmStudentRegisterCodeHandler(ICacheUsersRepository cache, IUsersRepository usersRepository, IJwtProvider jwtProvider, IEmailMessageService emailMessageService, IPublishEndpoint publishEndpoint)
+        public ConfirmStudentRegisterCodeHandler(ICacheUsersRepository cache, IUsersRepository usersRepository, IJwtProvider jwtProvider, IEmailMessageService emailMessageService, IPublishEndpoint publishEndpoint,
+            ISessionCacheRepository sessionCacheRepository, IOptions<JwtOptions> jwtOptions)
         {
             _cache = cache;
             _usersRepository = usersRepository;
             _jwtProvider = jwtProvider;
             _emailMessageService = emailMessageService;
             _publishEndpoint = publishEndpoint;
+            _sessionCacheRepository = sessionCacheRepository;
+            _jwtOptions = jwtOptions.Value;
         }
 
         public async Task<string> Handle(ConfirmStudentRegisterCodeCommand command, CancellationToken cancellationToken)
@@ -68,7 +76,16 @@ namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
             await _usersRepository.AddStudentAsync(user, student, cancellationToken);
             await _cache.RemoveUserDataAsync<CreationStudentData>(user.Id, cancellationToken);
 
-            var token = _jwtProvider.GenerateToken(user.Id, Role.Student);
+            var sessionId = Guid.NewGuid();
+
+            var accessToken = _jwtProvider.GenerateAccessToken(user.Id);
+            var refreshToken = _jwtProvider.GenerateRefreshToken(user.Id, sessionId);
+
+            await _sessionCacheRepository.SaveAsync(
+                                            sessionId: sessionId,
+                                            userId: user.Id,
+                                            ttl: TimeSpan.FromDays(_jwtOptions.RefreshExpiresDays),
+                                            ct: cancellationToken);
 
             var welcomeMessage = _emailMessageService.CreateWelcomeEmail(
                 email: user.Email,
@@ -77,7 +94,7 @@ namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
 
             await _publishEndpoint.Publish(welcomeMessage, cancellationToken);
 
-            return token;
+            return accessToken;
         }
 
     }

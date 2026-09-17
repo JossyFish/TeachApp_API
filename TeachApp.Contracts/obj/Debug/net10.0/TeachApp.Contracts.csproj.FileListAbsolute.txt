@@ -1,0 +1,13 @@
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\bin\Debug\net10.0\TeachApp.Contracts.deps.json
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\bin\Debug\net10.0\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\bin\Debug\net10.0\TeachApp.Contracts.pdb
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.AssemblyInfoInputs.cache
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.AssemblyInfo.cs
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.csproj.CoreCompileInputs.cache
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.sourcelink.json
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\refint\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.Contracts.pdb
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\ref\TeachApp.Contracts.dll
+D:\KAMILA\code\lernapp\Teach.API\TeachApp.Contracts\obj\Debug\net10.0\TeachApp.3225F387.Up2Date

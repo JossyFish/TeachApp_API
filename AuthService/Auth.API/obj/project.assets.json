@@ -1444,7 +1444,8 @@
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11",
           "Microsoft.Extensions.Caching.Hybrid": "10.9.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+          "TeachApp.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Auth.Application.dll": {}
@@ -1495,6 +1496,16 @@
         },
         "runtime": {
           "bin/placeholder/Auth.Infrastructure.dll": {}
+        }
+      },
+      "TeachApp.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TeachApp.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeachApp.Contracts.dll": {}
         }
       }
     }
@@ -4026,6 +4037,11 @@
       "type": "project",
       "path": "../Auth.Infrastructure/Auth.Infrastructure.csproj",
       "msbuildProject": "../Auth.Infrastructure/Auth.Infrastructure.csproj"
+    },
+    "TeachApp.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../TeachApp.Contracts/TeachApp.Contracts.csproj",
+      "msbuildProject": "../../TeachApp.Contracts/TeachApp.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4202,7 +4218,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

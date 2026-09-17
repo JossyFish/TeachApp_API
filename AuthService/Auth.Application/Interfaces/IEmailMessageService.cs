@@ -1,4 +1,4 @@
-﻿using Auth.Domain.Models.Events;
+﻿using TeachApp.Contracts.Events;
 
 namespace Auth.Application.Interfaces
 {

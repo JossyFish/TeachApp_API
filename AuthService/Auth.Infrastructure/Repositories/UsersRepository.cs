@@ -5,6 +5,7 @@ using Auth.Domain.Models;
 using Auth.Infrastructure.Data;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Auth.Infrastructure.Repositories
 {
@@ -12,10 +13,13 @@ namespace Auth.Infrastructure.Repositories
     {
         private AuthDBContext _context;
         private readonly IMapper _mapper;
-        public UsersRepository(AuthDBContext context, IMapper mapper) 
+        private readonly ILogger<UsersRepository> _logger;
+
+        public UsersRepository(AuthDBContext context, IMapper mapper, ILogger<UsersRepository> logger) 
         {
             _context = context;
             _mapper = mapper;
+            _logger = logger;          
         }
 
         public async Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken)
@@ -57,8 +61,9 @@ namespace Auth.Infrastructure.Repositories
 
                 await transaction.CommitAsync(cancellationToken);
             }
-            catch
+            catch (DbUpdateException ex)
             {
+                _logger.LogError(ex, ex.Message);
                 await transaction.RollbackAsync(cancellationToken);
                 throw;
             }

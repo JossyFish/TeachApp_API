@@ -23,6 +23,7 @@ namespace Auth.Infrastructure
 
             services.AddScoped<IUsersRepository, UsersRepository>();
             services.AddScoped<ICacheUsersRepository, CacheUsersRepository>();
+            services.AddScoped<ISessionCacheRepository, SessionCacheRepository>();
 
             services.AddAutoMapper(cfg =>
             {
