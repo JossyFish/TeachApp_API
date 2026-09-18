@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\auth\\loginstudent\\loginstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\auth\\loginstudent\\loginstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\register\\confirmstudentregistercode\\confirmstudentregistercodehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\register\\confirmstudentregistercode\\confirmstudentregistercodehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\register\\createstudent\\createstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\register\\createstudent\\createstudenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\auth\\googlelogin\\googleloginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\auth\\googlelogin\\googleloginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4350B7BB-851A-43FA-B4FA-480429858717}|AuthService\\Auth.Domain\\Auth.Domain.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4350B7BB-851A-43FA-B4FA-480429858717}|AuthService\\Auth.Domain\\Auth.Domain.csproj|solutionrelative:authservice\\auth.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4350B7BB-851A-43FA-B4FA-480429858717}|AuthService\\Auth.Domain\\Auth.Domain.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.domain\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4350B7BB-851A-43FA-B4FA-480429858717}|AuthService\\Auth.Domain\\Auth.Domain.csproj|solutionrelative:authservice\\auth.domain\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +34,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ConfirmStudentRegisterCodeHandler.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
               "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Register\\ConfirmStudentRegisterCode\\ConfirmStudentRegisterCodeHandler.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAewGAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:52:44.755Z",
+              "WhenOpened": "2026-09-18T11:50:23.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginStudentHandler.cs",
-              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Auth\\LoginStudent\\LoginStudentHandler.cs",
-              "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Auth\\LoginStudent\\LoginStudentHandler.cs",
-              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Auth\\LoginStudent\\LoginStudentHandler.cs",
-              "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Auth\\LoginStudent\\LoginStudentHandler.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAABIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateStudentHandler.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
+              "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Register\\CreateStudent\\CreateStudentHandler.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T09:50:31.583Z",
+              "WhenOpened": "2026-09-18T11:40:15.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Domain\\Models\\User.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Models\\User.cs",
+              "RelativeToolTip": "AuthService\\Auth.Domain\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T11:30:15.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Enums\\Role.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Domain\\Enums\\Role.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Enums\\Role.cs",
+              "RelativeToolTip": "AuthService\\Auth.Domain\\Enums\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T11:29:37.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoogleLoginHandler.cs",
+              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Auth\\GoogleLogin\\GoogleLoginHandler.cs",
+              "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Auth\\GoogleLogin\\GoogleLoginHandler.cs",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Auth\\GoogleLogin\\GoogleLoginHandler.cs",
+              "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Auth\\GoogleLogin\\GoogleLoginHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T11:23:23.862Z",
               "EditorCaption": ""
             },
             {
@@ -56,9 +107,9 @@
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAiAAAAAAAAAA==",
+              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-27T12:36:23.031Z",
               "EditorCaption": ""

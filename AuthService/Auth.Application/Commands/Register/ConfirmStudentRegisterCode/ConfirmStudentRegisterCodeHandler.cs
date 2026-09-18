@@ -1,4 +1,5 @@
-﻿using Auth.Application.Interfaces;
+﻿using Auth.Application.Dtos;
+using Auth.Application.Interfaces;
 using Auth.Application.Services;
 using Auth.Domain.Enums;
 using Auth.Domain.Interfaces;
@@ -13,7 +14,7 @@ using Microsoft.Extensions.Options;
 
 namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
 {
-    public sealed class ConfirmStudentRegisterCodeHandler : IRequestHandler<ConfirmStudentRegisterCodeCommand, string>
+    public sealed class ConfirmStudentRegisterCodeHandler : IRequestHandler<ConfirmStudentRegisterCodeCommand, LoginResponse>
     {
         private readonly ICacheUsersRepository _cache;
         private readonly IUsersRepository _usersRepository;
@@ -35,7 +36,7 @@ namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
             _jwtOptions = jwtOptions.Value;
         }
 
-        public async Task<string> Handle(ConfirmStudentRegisterCodeCommand command, CancellationToken cancellationToken)
+        public async Task<LoginResponse> Handle(ConfirmStudentRegisterCodeCommand command, CancellationToken cancellationToken)
         {
             var existingUser = await _usersRepository.GetByEmailAsync(command.Email, cancellationToken);
             if (existingUser != null)
@@ -55,7 +56,7 @@ namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
                 lastName: userCache.LastName,
                 email: userCache.Email,
                 passwordHash: userCache.PasswordHash,
-                roles: new List<string> { Role.Student.ToString() },
+                roles: new List<Role> { Role.Student },
                 cardLastDigits: null,
                 cardBrand: null,
                 isActive: true,
@@ -94,7 +95,15 @@ namespace Auth.Application.Commands.Register.ConfirmStudentRegisterCode
 
             await _publishEndpoint.Publish(welcomeMessage, cancellationToken);
 
-            return accessToken;
+            return new LoginResponse(
+                 AccessToken: accessToken,
+                 RefreshToken: refreshToken,
+                 UserId: user.Id,
+                 Email: user.Email,
+                 Name: user.Name,
+                 LastName: user.LastName,
+                 Roles: user.Roles
+             );
         }
 
     }

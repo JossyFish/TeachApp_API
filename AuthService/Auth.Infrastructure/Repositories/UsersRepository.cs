@@ -24,15 +24,25 @@ namespace Auth.Infrastructure.Repositories
 
         public async Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken)
         {
-            var userEntity = await _context.Users
+            return await _context.Users
                 .AsNoTracking()
-                .Include(u => u.Roles)
-                .FirstOrDefaultAsync(u => u.Email == email, cancellationToken);
-
-            if (userEntity == null)
-            { return null; }
-
-            return _mapper.Map<User>(userEntity);
+                .Where(u => u.Email == email)
+                .Select(u => new User
+                {
+                    Id = u.Id,
+                    Name = u.Name,
+                    LastName = u.LastName,
+                    Email = u.Email,
+                    PasswordHash = u.PasswordHash,
+                    CardLastDigits = u.CardLastDigits,
+                    CardBrand = u.CardBrand,
+                    IsActive = u.IsActive,
+                    CreatedAt = u.CreatedAt,
+                    UpdatedAt = u.UpdatedAt,
+                    LastLogin = u.LastLogin,
+                    Roles = u.Roles.Select(r => (Role)r.Id).ToList()
+                })
+                .FirstOrDefaultAsync(cancellationToken);
         }
 
         public async Task AddStudentAsync(User user, Student student, CancellationToken cancellationToken)

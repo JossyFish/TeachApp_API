@@ -26,8 +26,8 @@ namespace Auth.API.Controllers
         [HttpPost("confirm-registration-code-student")]
         public async Task<IActionResult> ConfirmRegistrationByCodeStudent([FromBody] ConfirmStudentRegisterCodeCommand command, CancellationToken cancellationToken)
         {
-            await _mediator.Send(command, cancellationToken);
-            return Accepted();
+            var result = await _mediator.Send(command, cancellationToken);
+            return Accepted(result);
         }
 
         [HttpPost("login-student")]

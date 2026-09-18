@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Auth.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,6 +12,6 @@ namespace Auth.Application.Dtos
         string Email,
         string Name,
         string LastName,
-        IReadOnlyList<string?> Roles
+        IReadOnlyList<Role> Roles
     );
 }

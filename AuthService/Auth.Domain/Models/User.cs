@@ -1,4 +1,6 @@
-﻿namespace Auth.Domain.Models
+﻿using Auth.Domain.Enums;
+
+namespace Auth.Domain.Models
 {
     public class User
     {
@@ -9,7 +11,7 @@
         public string PasswordHash { get; set; } = string.Empty;
         public string? CardLastDigits { get; set; }
         public string? CardBrand { get; set; }
-        public List<string?> Roles { get; }
+        public List<Role> Roles { get; set; } = [];
 
         public bool IsActive { get; set; } = true;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -20,7 +22,7 @@
         public User() { }
 
         public User(Guid id, string name, string lastName, string email, string passwordHash,
-            List<string>? roles, string? cardLastDigits, string? cardBrand, bool isActive,
+            List<Role> roles, string? cardLastDigits, string? cardBrand, bool isActive,
             DateTime createdAt, DateTime updatedAt, DateTime lastLogin)
         {
             Id = id;
@@ -28,7 +30,7 @@
             LastName = lastName;
             Email = email;
             PasswordHash = passwordHash;
-            Roles = roles ?? new List<string>();
+            Roles = roles;
             CardLastDigits = cardLastDigits;
             CardBrand = cardBrand;
             IsActive = isActive;
