@@ -23,6 +23,12 @@ namespace Auth.Application
 
             services.AddScoped<IEmailMessageService, EmailMessageService>();
             services.AddScoped<INumberProcessor, NumberProcessor>();
+            services.AddHttpClient<IAuthService, AuthService>(client =>
+            {
+                client.DefaultRequestHeaders.UserAgent.ParseAdd("TeachApp/1.0");
+                client.DefaultRequestHeaders.Accept.ParseAdd("application/vnd.github+json");
+                client.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
+            });
 
             return services;
         }

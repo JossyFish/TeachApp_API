@@ -17,6 +17,38 @@
   },
   {
     "ContainingType": "Auth.API.Controllers.AuthController",
+    "Method": "LoginGitHub",
+    "RelativePath": "api/Auth/login-github",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Auth.Application.Commands.Auth.GitHubLogin.GitHubLoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.AuthController",
+    "Method": "LoginGoogle",
+    "RelativePath": "api/Auth/login-google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Auth.Application.Commands.Auth.GoogleLogin.GoogleLoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.AuthController",
     "Method": "LoginStudent",
     "RelativePath": "api/Auth/login-student",
     "HttpMethod": "POST",

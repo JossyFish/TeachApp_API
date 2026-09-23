@@ -54,26 +54,37 @@ namespace Auth.API.Exceptions
                     Extensions = { ["confirmCode"] = invalidCode.ConfirmCode }
                 },
 
-                //InvalidLinkTokenException invalidLinkToken => new ProblemDetails
-                //{
-                //    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-                //    Title = "Invalid Link Token",
-                //    Status = StatusCodes.Status400BadRequest,
-                //    Detail = exception.Message,
-                //    Extensions = { ["linkToken"] = invalidLinkToken.Message }
-                //},
+                InvalidGoogleTokenException invalidGoogle => new ProblemDetails
+                {
+                    Type = "https://tools.ietf.org/html/rfc7235#section-3.1",
+                    Title = "Invalid Google Token",
+                    Status = StatusCodes.Status401Unauthorized,
+                    Detail = invalidGoogle.Message
+                },
 
-                //CacheDataNotFoundException cacheNotFound => new ProblemDetails
-                //{
-                //    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-                //    Title = "Data Not Found",
-                //    Status = StatusCodes.Status404NotFound,
-                //    Detail = exception.Message,
-                //    Extensions = {
-                //    ["dataType"] = cacheNotFound.DataType,
-                //    ["identifier"] = cacheNotFound.Identifier
-                //}
-                //},
+                EmailNotVerifiedException emailNotVerified => new ProblemDetails
+                {
+                    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+                    Title = "Email Not Verified",
+                    Status = StatusCodes.Status400BadRequest,
+                    Detail = emailNotVerified.Message
+                },
+
+                RoleNotAllowedException roleNotAllowed => new ProblemDetails
+                {
+                    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.3",
+                    Title = "Role Not Allowed",
+                    Status = StatusCodes.Status403Forbidden,
+                    Detail = roleNotAllowed.Message
+                },
+
+                RoleMismatchException roleMismatch => new ProblemDetails
+                {
+                    Type = "https://tools.ietf.org/html/rfc7231#section-6.5.3",
+                    Title = "Role Mismatch",
+                    Status = StatusCodes.Status403Forbidden,
+                    Detail = roleMismatch.Message
+                },
 
                 InvalidCredentialsException invalidCredentials => new ProblemDetails
                 {

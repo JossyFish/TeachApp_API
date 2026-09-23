@@ -4,6 +4,7 @@ using Auth.Domain.Interfaces;
 using Auth.Domain.Models;
 using Auth.Infrastructure.Data;
 using AutoMapper;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -43,6 +44,14 @@ namespace Auth.Infrastructure.Repositories
                     Roles = u.Roles.Select(r => (Role)r.Id).ToList()
                 })
                 .FirstOrDefaultAsync(cancellationToken);
+        }
+
+        public async Task UpdateLastLoginAsync(Guid userId, CancellationToken cancellationToken)
+        {
+            await _context.Users
+                            .Where(u => u.Id == userId)
+                            .ExecuteUpdateAsync(s => s
+                            .SetProperty(u => u.LastLogin, DateTime.UtcNow), cancellationToken);
         }
 
         public async Task AddStudentAsync(User user, Student student, CancellationToken cancellationToken)

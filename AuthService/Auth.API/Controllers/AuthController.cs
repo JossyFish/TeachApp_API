@@ -1,7 +1,10 @@
-﻿using Auth.Application.Commands.Auth.LoginStudent;
+﻿using Auth.Application.Commands.Auth.GitHubLogin;
+using Auth.Application.Commands.Auth.GoogleLogin;
+using Auth.Application.Commands.Auth.LoginStudent;
 using Auth.Application.Commands.Register.ConfirmStudentRegisterCode;
 using Auth.Application.Commands.Register.CreateStudent;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Auth.API.Controllers
@@ -16,7 +19,24 @@ namespace Auth.API.Controllers
             _mediator = mediator;
         }
 
+        [HttpPost("login-google")]
+        [AllowAnonymous]
+        public async Task<IActionResult> LoginGoogle([FromBody] GoogleLoginCommand command, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(command, cancellationToken);
+            return Accepted(result);
+        }
+
+        [HttpPost("login-github")]
+        [AllowAnonymous]
+        public async Task<IActionResult> LoginGitHub([FromBody] GitHubLoginCommand command, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(command, cancellationToken);
+            return Accepted(result);
+        }
+
         [HttpPost("register-student")]
+        [AllowAnonymous]
         public async Task<IActionResult> RegisterStudent([FromBody] CreateStudentCommand command, CancellationToken cancellationToken)
         {
             await _mediator.Send(command, cancellationToken);
@@ -24,6 +44,7 @@ namespace Auth.API.Controllers
         }
 
         [HttpPost("confirm-registration-code-student")]
+        [AllowAnonymous]
         public async Task<IActionResult> ConfirmRegistrationByCodeStudent([FromBody] ConfirmStudentRegisterCodeCommand command, CancellationToken cancellationToken)
         {
             var result = await _mediator.Send(command, cancellationToken);
@@ -31,6 +52,7 @@ namespace Auth.API.Controllers
         }
 
         [HttpPost("login-student")]
+        [AllowAnonymous]
         public async Task<IActionResult> LoginStudent([FromBody] LoginStudentCommand command, CancellationToken cancellationToken)
         {
             var result = await _mediator.Send(command, cancellationToken);

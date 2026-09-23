@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WdD+a6GzLMI=",
+  "dgSpecHash": "uc2/Yc5laqA=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Auth.API.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,9 @@
     "D:\\NuGetCache\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "D:\\NuGetCache\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "D:\\NuGetCache\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "D:\\NuGetCache\\google.apis\\1.76.0\\google.apis.1.76.0.nupkg.sha512",
+    "D:\\NuGetCache\\google.apis.auth\\1.76.0\\google.apis.auth.1.76.0.nupkg.sha512",
+    "D:\\NuGetCache\\google.apis.core\\1.76.0\\google.apis.core.1.76.0.nupkg.sha512",
     "D:\\NuGetCache\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "D:\\NuGetCache\\masstransit\\8.3.4\\masstransit.8.3.4.nupkg.sha512",
     "D:\\NuGetCache\\masstransit.abstractions\\8.3.4\\masstransit.abstractions.8.3.4.nupkg.sha512",
@@ -63,7 +66,7 @@
     "D:\\NuGetCache\\swashbuckle.aspnetcore.swaggergen\\10.2.3\\swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
     "D:\\NuGetCache\\swashbuckle.aspnetcore.swaggerui\\10.2.3\\swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
     "D:\\NuGetCache\\system.clientmodel\\1.8.0\\system.clientmodel.1.8.0.nupkg.sha512",
-    "D:\\NuGetCache\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "D:\\NuGetCache\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
     "D:\\NuGetCache\\system.composition\\9.0.0\\system.composition.9.0.0.nupkg.sha512",
     "D:\\NuGetCache\\system.composition.attributedmodel\\9.0.0\\system.composition.attributedmodel.9.0.0.nupkg.sha512",
     "D:\\NuGetCache\\system.composition.convention\\9.0.0\\system.composition.convention.9.0.0.nupkg.sha512",
@@ -72,6 +75,7 @@
     "D:\\NuGetCache\\system.composition.typedparts\\9.0.0\\system.composition.typedparts.9.0.0.nupkg.sha512",
     "D:\\NuGetCache\\system.configuration.configurationmanager\\9.0.11\\system.configuration.configurationmanager.9.0.11.nupkg.sha512",
     "D:\\NuGetCache\\system.identitymodel.tokens.jwt\\8.19.2\\system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512",
+    "D:\\NuGetCache\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512",
     "D:\\NuGetCache\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
     "D:\\NuGetCache\\system.security.cryptography.pkcs\\9.0.11\\system.security.cryptography.pkcs.9.0.11.nupkg.sha512",
     "D:\\NuGetCache\\system.security.cryptography.protecteddata\\9.0.11\\system.security.cryptography.protecteddata.9.0.11.nupkg.sha512"

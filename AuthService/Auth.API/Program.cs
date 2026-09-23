@@ -28,6 +28,7 @@ public class Program
 
         builder.Services.Configure<CacheOptions>(builder.Configuration.GetSection(nameof(CacheOptions)));
         builder.Services.Configure<RabbitMQOptions>(builder.Configuration.GetSection(nameof(RabbitMQOptions)));
+        builder.Services.Configure<GitHubAuthOptions>(builder.Configuration.GetSection(nameof(GitHubAuthOptions)));
 
         builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
