@@ -46,6 +46,13 @@ namespace Auth.Infrastructure.Repositories
                 .FirstOrDefaultAsync(cancellationToken);
         }
 
+        public async Task DeleteAsync(string email, CancellationToken cancellationToken)
+        {
+            await _context.Users
+                            .Where(u => u.Email == email)
+                            .ExecuteDeleteAsync(cancellationToken);
+        }
+
         public async Task UpdateLastLoginAsync(Guid userId, CancellationToken cancellationToken)
         {
             await _context.Users

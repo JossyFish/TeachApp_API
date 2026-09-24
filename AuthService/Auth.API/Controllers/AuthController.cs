@@ -1,8 +1,11 @@
 ﻿using Auth.Application.Commands.Auth.GitHubLogin;
 using Auth.Application.Commands.Auth.GoogleLogin;
 using Auth.Application.Commands.Auth.LoginStudent;
+using Auth.Application.Commands.Delete.DeleteUser;
 using Auth.Application.Commands.Register.ConfirmStudentRegisterCode;
 using Auth.Application.Commands.Register.CreateStudent;
+using Auth.Application.Extensions;
+using Auth.Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -57,6 +60,14 @@ namespace Auth.API.Controllers
         {
             var result = await _mediator.Send(command, cancellationToken);
             return Accepted(result);
+        }
+
+        [HttpDelete("delete-user")]
+        //[HasPermission(Permission.ProfileEdit)]
+        public async Task<IActionResult> DeleteUser([FromBody] DeleteUserCommand command, CancellationToken cancellationToken)
+        {
+            await _mediator.Send(command, cancellationToken);
+            return NoContent();
         }
 
     }

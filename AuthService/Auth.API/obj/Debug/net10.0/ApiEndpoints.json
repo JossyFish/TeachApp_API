@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Auth.API.Controllers.AuthController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Auth/delete-user",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Auth.Application.Commands.Delete.DeleteUser.DeleteUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.AuthController",
     "Method": "LoginGitHub",
     "RelativePath": "api/Auth/login-github",
     "HttpMethod": "POST",
