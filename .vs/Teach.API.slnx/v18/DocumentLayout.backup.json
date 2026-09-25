@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{1EED0683-A50F-A691-A887-F0246AE24480}|AuthService\\Auth.API\\Auth.API.csproj|solutionrelative:authservice\\auth.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.application\\commands\\delete\\deleteuser\\deleteuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C38FFF1-FA53-4F98-90BC-FAFAEFCA1E6D}|AuthService\\Auth.Application\\Auth.Application.csproj|solutionrelative:authservice\\auth.application\\commands\\delete\\deleteuser\\deleteuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5060E1F4-8D8E-EDE8-20C8-B8352C9C13E7}|AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj|d:\\kamila\\code\\lernapp\\teach.api\\authservice\\auth.infrastructure\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5060E1F4-8D8E-EDE8-20C8-B8352C9C13E7}|AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:authservice\\auth.infrastructure\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,43 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeleteUserHandler.cs",
-              "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Delete\\DeleteUser\\DeleteUserHandler.cs",
-              "RelativeDocumentMoniker": "AuthService\\Auth.Application\\Commands\\Delete\\DeleteUser\\DeleteUserHandler.cs",
-              "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Application\\Commands\\Delete\\DeleteUser\\DeleteUserHandler.cs",
-              "RelativeToolTip": "AuthService\\Auth.Application\\Commands\\Delete\\DeleteUser\\DeleteUserHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-24T11:29:38.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.API\\Program.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Program.cs",
               "RelativeToolTip": "AuthService\\Auth.API\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAApwB0AAABvAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAMwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T14:26:35.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UsersRepository.cs",
               "DocumentMoniker": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\Repositories\\UsersRepository.cs",
               "RelativeDocumentMoniker": "AuthService\\Auth.Infrastructure\\Repositories\\UsersRepository.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Infrastructure\\Repositories\\UsersRepository.cs",
               "RelativeToolTip": "AuthService\\Auth.Infrastructure\\Repositories\\UsersRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T09:15:27.602Z",
               "EditorCaption": ""
@@ -75,7 +58,7 @@
               "RelativeDocumentMoniker": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAwEEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAhwDIAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-27T12:36:23.031Z",
               "EditorCaption": ""

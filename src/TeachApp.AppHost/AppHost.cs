@@ -29,6 +29,8 @@ var communicationApi = builder.AddProject<Projects.Communication_API>("communica
 builder.AddProject<Projects.Teach_Gateway>("teach-gateway")
     .WithReference(api)
     .WithReference(authApi)
-    .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
+    .WithReference(communicationApi)
+    .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development")
+    .WithHttpEndpoint(port: 7061, name: "https");
 
 builder.Build().Run();

@@ -17,10 +17,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="10.10.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.2.3" />
     <PackageReference Include="Yarp.ReverseProxy" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuthService\Auth.API\Auth.API.csproj" />
+    <ProjectReference Include="..\CommunicationService\Communication.API\Communication.API.csproj" />
+    <ProjectReference Include="..\TeachService\Teach.API\Teach.API.csproj" />
   </ItemGroup>
 
 </Project>

@@ -20,5 +20,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">D:\NuGetCache\microsoft.codeanalysis.analyzers\3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">D:\NuGetCache\grpc.tools\2.80.0</PkgGrpc_Tools>
+    <PkgAspire_Hosting_AppHost Condition=" '$(PkgAspire_Hosting_AppHost)' == '' ">D:\NuGetCache\aspire.hosting.apphost\13.4.6</PkgAspire_Hosting_AppHost>
   </PropertyGroup>
 </Project>

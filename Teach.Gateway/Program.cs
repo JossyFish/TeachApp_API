@@ -7,7 +7,11 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddReverseProxy().LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
+        builder.Services.AddServiceDiscovery();
+
+        builder.Services.AddReverseProxy()
+            .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"))
+            .AddServiceDiscoveryDestinationResolver();
 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -20,6 +24,16 @@ public class Program
             app.UseSwaggerUI();
             app.MapOpenApi();
         }
+
+
+        app.UseCors(x =>
+        {
+            x.WithOrigins("http://localhost:3000")
+                 .AllowAnyHeader()
+                 .AllowAnyMethod()
+                 .AllowCredentials();
+        });
+
 
         app.UseHttpsRedirection();
 

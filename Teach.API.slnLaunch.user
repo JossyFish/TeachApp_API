@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "AuthService\\Auth.API\\Auth.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CommunicationService\\Communication.API\\Communication.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

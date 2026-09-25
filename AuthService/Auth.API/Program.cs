@@ -47,6 +47,15 @@ public class Program
             app.UseSwaggerUI();
         }
 
+        app.UseCors(x =>
+        {
+            x.WithOrigins("http://localhost:3000")
+                 .AllowAnyHeader()
+                 .AllowAnyMethod()
+                 .AllowCredentials();
+        });
+
+
         app.UseHttpsRedirection();
         app.UseExceptionHandler();
         app.UseAuthentication();
