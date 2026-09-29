@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Bk1hhQXWplM=",
+  "dgSpecHash": "68U9c7YuqH0=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Auth.Domain.csproj",
   "expectedPackageFiles": [
@@ -82,15 +82,5 @@
     "D:\\NuGetCache\\system.security.cryptography.protecteddata\\9.0.11\\system.security.cryptography.protecteddata.9.0.11.nupkg.sha512",
     "D:\\NuGetCache\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json.",
-      "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Auth.Domain.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.Domain\\Auth.Domain.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

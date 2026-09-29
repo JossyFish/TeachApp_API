@@ -1,6 +1,6 @@
 ﻿using Auth.Domain.Enums;
 
-namespace Auth.Domain.Models
+namespace Auth.Domain.Models.Models
 {
     public class User
     {

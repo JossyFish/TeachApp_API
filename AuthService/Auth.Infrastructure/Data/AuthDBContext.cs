@@ -13,6 +13,9 @@ namespace Auth.Infrastructure.Data
         public DbSet<StudentEntity> StudentProfiles { get; set; }
         public DbSet<TeacherEntity> TeacherProfiles { get; set; }
         public DbSet<AdminEntity> AdminProfiles { get; set; }
+        public DbSet<ExpertiseEntity> Expertises { get; set; }
+        public DbSet<TeacherExpertiseEntity> TeacherExpertises { get; set; }
+        public DbSet<SubscriptionPlanEntity> SubscriptionPlans { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -94,5 +94,25 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.CatalogsController",
+    "Method": "GetExpertises",
+    "RelativePath": "api/Catalogs/expertises",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Auth.API.Controllers.CatalogsController",
+    "Method": "GetSubscriptionPlans",
+    "RelativePath": "api/Catalogs/subscription-plans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

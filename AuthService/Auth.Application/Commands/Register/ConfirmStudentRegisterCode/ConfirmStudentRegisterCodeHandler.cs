@@ -6,6 +6,7 @@ using Auth.Domain.Interfaces;
 using Auth.Domain.Models;
 using Auth.Domain.Models.Cache;
 using Auth.Domain.Models.Exceptions;
+using Auth.Domain.Models.Models;
 using Auth.Domain.Models.Options;
 using Auth.Infrastructure.Repositories;
 using MassTransit;

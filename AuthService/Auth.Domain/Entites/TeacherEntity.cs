@@ -3,10 +3,10 @@
     public class TeacherEntity
     {
         public Guid UserId { get; set; }
-        public string Expertise { get; set; }
         public string Experience { get; set; }
         public string Bio { get; set; }
-        public string SubscriptionPlan { get; set; }
+        public int SubscriptionPlanId { get; set; }
+        public SubscriptionPlanEntity SubscriptionPlan { get; set; } = null!;
         public DateTime SubscriptionExpiresAt { get; set; } = DateTime.UtcNow;
         public string CardLastDigits { get; set; }
         public bool IsActive { get; set; } = true;
@@ -17,5 +17,6 @@
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         public UserEntity User { get; set; }
+        public ICollection<TeacherExpertiseEntity> Expertises { get; set; } = [];
     }
 }

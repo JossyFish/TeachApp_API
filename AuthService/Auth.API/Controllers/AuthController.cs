@@ -4,8 +4,6 @@ using Auth.Application.Commands.Auth.LoginStudent;
 using Auth.Application.Commands.Delete.DeleteUser;
 using Auth.Application.Commands.Register.ConfirmStudentRegisterCode;
 using Auth.Application.Commands.Register.CreateStudent;
-using Auth.Application.Extensions;
-using Auth.Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

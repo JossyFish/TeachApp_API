@@ -4,6 +4,7 @@ using Auth.Domain.Enums;
 using Auth.Domain.Interfaces;
 using Auth.Domain.Models;
 using Auth.Domain.Models.Exceptions;
+using Auth.Domain.Models.Models;
 using Auth.Domain.Models.Options;
 using MediatR;
 using Microsoft.Extensions.Options;

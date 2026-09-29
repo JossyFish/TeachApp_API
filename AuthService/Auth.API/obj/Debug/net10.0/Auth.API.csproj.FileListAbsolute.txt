@@ -13,7 +13,6 @@ D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Auth.API
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\AutoMapper.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Azure.Core.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\Azure.Identity.dll
-D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\DevOne.Security.Cryptography.BCrypt.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\FluentValidation.dll
 D:\KAMILA\code\lernapp\Teach.API\AuthService\Auth.API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "89sve6vK868=",
+  "dgSpecHash": "20x/AXaQ6Yg=",
   "success": true,
   "projectFilePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\Teach.Gateway\\Teach.Gateway.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "D:\\NuGetCache\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "D:\\NuGetCache\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "D:\\NuGetCache\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
-    "D:\\NuGetCache\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
     "D:\\NuGetCache\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "D:\\NuGetCache\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "D:\\NuGetCache\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
@@ -121,18 +120,5 @@
     "D:\\NuGetCache\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
     "D:\\NuGetCache\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Пакет \"BCrypt 1.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net10.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\Teach.Gateway\\Teach.Gateway.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\KAMILA\\code\\lernapp\\Teach.API\\Teach.Gateway\\Teach.Gateway.csproj",
-      "libraryId": "BCrypt",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

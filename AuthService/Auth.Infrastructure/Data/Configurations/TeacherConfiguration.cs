@@ -13,18 +13,22 @@ namespace Auth.Infrastructure.Data.Configurations
             builder.Property(t => t.UserId)
                 .IsRequired();
 
-            builder.Property(t => t.Expertise)
-                .HasMaxLength(255);
-
             builder.Property(t => t.Experience)
                 .HasMaxLength(50);
 
             builder.Property(t => t.Bio)
                 .HasMaxLength(1000);
 
-            builder.Property(t => t.SubscriptionPlan)
-                .HasMaxLength(20)
-                .HasDefaultValue("monthly");
+            builder.Property(t => t.SubscriptionPlanId)
+                .IsRequired()
+                .HasDefaultValue(1);  
+
+            builder.HasOne(t => t.SubscriptionPlan)
+                .WithMany(p => p.Teachers)
+                .HasForeignKey(t => t.SubscriptionPlanId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasIndex(t => t.SubscriptionPlanId);
 
             builder.Property(t => t.SubscriptionExpiresAt)
                 .IsRequired()
@@ -65,11 +69,11 @@ namespace Auth.Infrastructure.Data.Configurations
             builder.HasIndex(t => t.UserId)
                 .IsUnique();
 
-            builder.HasIndex(t => t.SubscriptionPlan);
+            builder.HasIndex(t => t.SubscriptionPlanId);
+            builder.HasIndex(t => new { t.SubscriptionPlanId, t.SubscriptionExpiresAt });
 
             builder.HasIndex(t => t.IsActive);
 
-            builder.HasIndex(t => new { t.SubscriptionPlan, t.SubscriptionExpiresAt });
         }
     }
 }

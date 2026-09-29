@@ -21,7 +21,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeachApp.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+739fa668d8cd1108afc4a116a2fd5dceef33b4b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0121f46ad01477a1eb59f014f05c48fc5f481ed4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeachApp.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeachApp.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

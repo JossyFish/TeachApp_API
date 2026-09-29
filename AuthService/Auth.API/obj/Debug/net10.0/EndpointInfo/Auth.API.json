@@ -190,6 +190,30 @@
           }
         }
       }
+    },
+    "/api/Catalogs/expertises": {
+      "get": {
+        "tags": [
+          "Catalogs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Catalogs/subscription-plans": {
+      "get": {
+        "tags": [
+          "Catalogs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -294,6 +318,9 @@
   "tags": [
     {
       "name": "Auth"
+    },
+    {
+      "name": "Catalogs"
     }
   ]
 }

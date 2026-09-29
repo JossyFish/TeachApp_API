@@ -1,10 +1,9 @@
 ﻿using Auth.Domain.Entites;
 using Auth.Domain.Enums;
 using Auth.Domain.Interfaces;
-using Auth.Domain.Models;
+using Auth.Domain.Models.Models;
 using Auth.Infrastructure.Data;
 using AutoMapper;
-using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -95,6 +94,35 @@ namespace Auth.Infrastructure.Repositories
             }
         }
 
+
+        public async Task<IReadOnlyList<Domain.Models.Models.Expertise?>> GetExpertisesAsync(CancellationToken cancellationToken)
+        {
+            return await _context.Expertises
+                         .AsNoTracking()
+                         .Select(e => new Domain.Models.Models.Expertise
+                         {
+                             Id = e.Id,
+                             Name = e.Name
+                         })
+                         .ToListAsync(cancellationToken);
+        }
+
+        public async Task<IReadOnlyList<SubscriptionPlan?>> GetSubscriptionPlansAsync(CancellationToken cancellationToken)
+        {
+            return await _context.SubscriptionPlans
+                         .AsNoTracking()
+                         .Select(e => new SubscriptionPlan
+                         {
+                             Id = e.Id,
+                             Name = e.Name,
+                             Code = e.Code,
+                             Price = e.Price,
+                             DurationDays = e.DurationDays,
+                             Description = e.Description,
+                             IsPopular = e.IsPopular
+                         })
+                         .ToListAsync(cancellationToken);
+        }
 
     }
 }

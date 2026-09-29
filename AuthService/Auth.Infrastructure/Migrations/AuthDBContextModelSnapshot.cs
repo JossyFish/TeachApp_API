@@ -50,6 +50,69 @@ namespace Auth.Infrastructure.Migrations
                     b.ToTable("AdminProfiles");
                 });
 
+            modelBuilder.Entity("Auth.Domain.Entites.ExpertiseEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Expertises");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Development"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Design"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "DataScience"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Business"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "AiMl"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Finance"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Marketing"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Other"
+                        });
+                });
+
             modelBuilder.Entity("Auth.Domain.Entites.PermissionEntity", b =>
                 {
                     b.Property<int>("Id")
@@ -215,6 +278,84 @@ namespace Auth.Infrastructure.Migrations
                     b.ToTable("StudentProfiles");
                 });
 
+            modelBuilder.Entity("Auth.Domain.Entites.SubscriptionPlanEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Code")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("DurationDays")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<bool>("IsPopular")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.ToTable("SubscriptionPlans");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Code = 1,
+                            Description = "Оплата каждый месяц",
+                            DurationDays = 30,
+                            IsActive = true,
+                            IsPopular = false,
+                            Name = "Monthly",
+                            Price = 19.99m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Code = 2,
+                            Description = "Оплата раз в год. Экономия $60",
+                            DurationDays = 365,
+                            IsActive = true,
+                            IsPopular = true,
+                            Name = "Yearly",
+                            Price = 179.99m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Code = 3,
+                            Description = "Премиум доступ со всеми функциями",
+                            DurationDays = 30,
+                            IsActive = true,
+                            IsPopular = false,
+                            Name = "VIP",
+                            Price = 39.99m
+                        });
+                });
+
             modelBuilder.Entity("Auth.Domain.Entites.TeacherEntity", b =>
                 {
                     b.Property<Guid>("UserId")
@@ -245,11 +386,6 @@ namespace Auth.Infrastructure.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Expertise")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
@@ -260,12 +396,10 @@ namespace Auth.Infrastructure.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("DATEADD(MONTH, 1, GETDATE())");
 
-                    b.Property<string>("SubscriptionPlan")
-                        .IsRequired()
+                    b.Property<int>("SubscriptionPlanId")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasDefaultValue("monthly");
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
 
                     b.Property<int>("TotalCourses")
                         .ValueGeneratedOnAdd()
@@ -286,14 +420,29 @@ namespace Auth.Infrastructure.Migrations
 
                     b.HasIndex("IsActive");
 
-                    b.HasIndex("SubscriptionPlan");
+                    b.HasIndex("SubscriptionPlanId");
 
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.HasIndex("SubscriptionPlan", "SubscriptionExpiresAt");
+                    b.HasIndex("SubscriptionPlanId", "SubscriptionExpiresAt");
 
                     b.ToTable("TeacherProfiles");
+                });
+
+            modelBuilder.Entity("Auth.Domain.Entites.TeacherExpertiseEntity", b =>
+                {
+                    b.Property<Guid>("TeacherId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ExpertiseId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TeacherId", "ExpertiseId");
+
+                    b.HasIndex("ExpertiseId");
+
+                    b.ToTable("TeacherExpertises");
                 });
 
             modelBuilder.Entity("Auth.Domain.Entites.UserEntity", b =>
@@ -304,12 +453,10 @@ namespace Auth.Infrastructure.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<string>("CardBrand")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("CardLastDigits")
-                        .IsRequired()
                         .HasMaxLength(4)
                         .HasColumnType("nvarchar(4)");
 
@@ -419,13 +566,40 @@ namespace Auth.Infrastructure.Migrations
 
             modelBuilder.Entity("Auth.Domain.Entites.TeacherEntity", b =>
                 {
+                    b.HasOne("Auth.Domain.Entites.SubscriptionPlanEntity", "SubscriptionPlan")
+                        .WithMany("Teachers")
+                        .HasForeignKey("SubscriptionPlanId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("Auth.Domain.Entites.UserEntity", "User")
                         .WithOne("Teacher")
                         .HasForeignKey("Auth.Domain.Entites.TeacherEntity", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("SubscriptionPlan");
+
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Auth.Domain.Entites.TeacherExpertiseEntity", b =>
+                {
+                    b.HasOne("Auth.Domain.Entites.ExpertiseEntity", "Expertise")
+                        .WithMany("Teachers")
+                        .HasForeignKey("ExpertiseId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Auth.Domain.Entites.TeacherEntity", "Teacher")
+                        .WithMany("Expertises")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Expertise");
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("Auth.Domain.Entites.UserRoleEntity", b =>
@@ -441,6 +615,21 @@ namespace Auth.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Auth.Domain.Entites.ExpertiseEntity", b =>
+                {
+                    b.Navigation("Teachers");
+                });
+
+            modelBuilder.Entity("Auth.Domain.Entites.SubscriptionPlanEntity", b =>
+                {
+                    b.Navigation("Teachers");
+                });
+
+            modelBuilder.Entity("Auth.Domain.Entites.TeacherEntity", b =>
+                {
+                    b.Navigation("Expertises");
                 });
 
             modelBuilder.Entity("Auth.Domain.Entites.UserEntity", b =>

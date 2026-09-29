@@ -1,6 +1,6 @@
 ﻿using Auth.Domain.Entites;
 using Auth.Domain.Enums;
-using Auth.Domain.Models;
+using Auth.Domain.Models.Models;
 using AutoMapper;
 
 namespace Auth.Domain.Mapping
