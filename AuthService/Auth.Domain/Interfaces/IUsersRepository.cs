@@ -11,5 +11,6 @@ namespace Auth.Domain.Interfaces
 
         Task<IReadOnlyList<Domain.Models.Models.Expertise?>> GetExpertisesAsync(CancellationToken cancellationToken);
         Task<IReadOnlyList<SubscriptionPlan?>> GetSubscriptionPlansAsync(CancellationToken cancellationToken);
+        Task<int> GetSubscriptionDuration(int subscriptionPlanId, CancellationToken cancellationToken);
     }
 }

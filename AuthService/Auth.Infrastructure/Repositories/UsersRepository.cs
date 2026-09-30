@@ -94,6 +94,12 @@ namespace Auth.Infrastructure.Repositories
             }
         }
 
+        public async Task AddTeacherAsync(User user, Teacher student, CancellationToken cancellationToken)
+        {
+
+        }
+
+
 
         public async Task<IReadOnlyList<Domain.Models.Models.Expertise?>> GetExpertisesAsync(CancellationToken cancellationToken)
         {
@@ -122,6 +128,15 @@ namespace Auth.Infrastructure.Repositories
                              IsPopular = e.IsPopular
                          })
                          .ToListAsync(cancellationToken);
+        }
+
+        public async Task<int> GetSubscriptionDuration(int subscriptionPlanId, CancellationToken cancellationToken)
+        {
+            return await _context.SubscriptionPlans
+                                 .AsNoTracking()
+                                 .Where(s => s.Id == subscriptionPlanId)
+                                 .Select(s => s.DurationDays)
+                                 .FirstOrDefaultAsync(cancellationToken); ;
         }
 
     }

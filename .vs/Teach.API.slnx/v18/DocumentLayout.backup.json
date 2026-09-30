@@ -38,8 +38,7 @@
               "RelativeToolTip": "AuthService\\Auth.Application\\Queries\\GetSubscriptionPlans\\GetSubscriptionPlansHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T14:08:53.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T14:08:53.913Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "AuthService\\Auth.Infrastructure\\Repositories\\UsersRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T09:15:27.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T09:15:27.602Z"
             },
             {
               "$type": "Document",
@@ -64,8 +62,7 @@
               "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T12:36:23.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-27T12:36:23.031Z"
             },
             {
               "$type": "Document",
@@ -75,7 +72,7 @@
               "RelativeDocumentMoniker": "AuthService\\Auth.API\\Controllers\\CatalogsController.cs",
               "ToolTip": "D:\\KAMILA\\code\\lernapp\\Teach.API\\AuthService\\Auth.API\\Controllers\\CatalogsController.cs",
               "RelativeToolTip": "AuthService\\Auth.API\\Controllers\\CatalogsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T11:31:51.018Z",
               "EditorCaption": ""

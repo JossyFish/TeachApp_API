@@ -1,5 +1,4 @@
-﻿using Auth.Domain.Enums;
-using MediatR;
+﻿using MediatR;
 
 namespace Auth.Application.Commands.Register.CreateTeacher
 {
@@ -9,10 +8,16 @@ namespace Auth.Application.Commands.Register.CreateTeacher
         public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
-        public List<Expertise> Expertises { get; set; } = [];  
+
+        public List<int> ExpertiseIds { get; set; } = [];
         public string Experience { get; set; } = string.Empty;
         public string Bio { get; set; } = string.Empty;
 
+        public string CardNumber { get; set; } = string.Empty;
+        public string CardExpiry { get; set; } = string.Empty;
+        public string CardCvc { get; set; } = string.Empty;
+
+        public int SubscriptionPlanId { get; set; }
 
 
     }
