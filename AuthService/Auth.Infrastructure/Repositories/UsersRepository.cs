@@ -1,6 +1,7 @@
 ﻿using Auth.Domain.Entites;
 using Auth.Domain.Enums;
 using Auth.Domain.Interfaces;
+using Auth.Domain.Models.Exceptions;
 using Auth.Domain.Models.Models;
 using Auth.Infrastructure.Data;
 using AutoMapper;
@@ -62,24 +63,53 @@ namespace Auth.Infrastructure.Repositories
 
         public async Task AddStudentAsync(User user, Student student, CancellationToken cancellationToken)
         {
+            var existingUser = await _context.Users
+                .Include(u => u.Student)
+                .FirstOrDefaultAsync(u => u.Email == user.Email, cancellationToken);
+
+            if (existingUser != null && existingUser.Student != null)
+                throw new UserAlreadyExistException(user.Email);
+
             using var transaction = await _context.Database.BeginTransactionAsync(cancellationToken);
 
             try
             {
-                var roleEntity = await _context.Roles
-                    .SingleOrDefaultAsync(r => r.Id == (int)Role.Student, cancellationToken);
+                Guid userId;
 
-                if (roleEntity == null)
-                    throw new InvalidOperationException("Student role not found");
+                if (existingUser != null)
+                {
+                    var roleEntity = await _context.Roles
+                        .SingleOrDefaultAsync(r => r.Id == (int)Role.Student, cancellationToken);
 
-                var userEntity = _mapper.Map<UserEntity>(user);
-                userEntity.Roles.Add(roleEntity);
+                    if (roleEntity == null)
+                        throw new InvalidOperationException("Student role not found");
 
-                await _context.Users.AddAsync(userEntity, cancellationToken);
-                await _context.SaveChangesAsync(cancellationToken); 
+                    if (!existingUser.Roles.Any(r => r.Id == (int)Role.Student))
+                        existingUser.Roles.Add(roleEntity);
+
+                    userId = existingUser.Id;
+
+                    await _context.SaveChangesAsync(cancellationToken);
+                }
+                else
+                {
+                    var roleEntity = await _context.Roles
+                        .SingleOrDefaultAsync(r => r.Id == (int)Role.Student, cancellationToken);
+
+                    if (roleEntity == null)
+                        throw new InvalidOperationException("Student role not found");
+
+                    var userEntity = _mapper.Map<UserEntity>(user);
+                    userEntity.Roles.Add(roleEntity);
+
+                    await _context.Users.AddAsync(userEntity, cancellationToken);
+                    await _context.SaveChangesAsync(cancellationToken);
+
+                    userId = userEntity.Id;
+                }
 
                 var studentEntity = _mapper.Map<StudentEntity>(student);
-                studentEntity.UserId = userEntity.Id; 
+                studentEntity.UserId = userId;
 
                 await _context.StudentProfiles.AddAsync(studentEntity, cancellationToken);
                 await _context.SaveChangesAsync(cancellationToken);

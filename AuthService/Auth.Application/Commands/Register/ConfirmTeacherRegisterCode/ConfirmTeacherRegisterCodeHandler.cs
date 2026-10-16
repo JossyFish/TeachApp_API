@@ -76,7 +76,7 @@ namespace Auth.Application.Commands.Register.ConfirmTeacherRegisterCode
                  cardLastDigits: cardLast4,
                  isActive: true);
 
-            await _usersRepository.AddTeacherAsync(user, teacher, cancellationToken);
+           // await _usersRepository.AddTeacherAsync(user, teacher, cancellationToken);
             await _cache.RemoveUserDataAsync<CreationTeacherData>(user.Id, cancellationToken);
 
             var sessionId = Guid.NewGuid();

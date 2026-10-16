@@ -60,7 +60,7 @@ namespace Auth.Application.Commands.Register.CreateTeacher
                 confirmationCode: confirmUserCode,
                 userId: creationData.Id);
 
-            await _publishEndpoint.Publish(emailMessage, ct);
+            await _publishEndpoint.Publish(emailMessage, cancellationToken);
 
             return Unit.Value;
 
